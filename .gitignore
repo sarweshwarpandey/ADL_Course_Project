@@ -13,3 +13,10 @@ metrics
 prompts
 .locks
 ex_readme.md
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+CUIG/
+

@@ -51,6 +51,26 @@ def parse_args(input_args=None):
         default="mistral",
         help="LLM Model to use for auxiliary prompt generation",
     )
+    ## Adaptive Anchor Assignment (Task 2)
+    parser.add_argument(
+        "--anchor_strategy",
+        type=str,
+        default=None,
+        choices=["shared", "independent", "adaptive"],
+        help="Dynamic anchor assignment strategy for incoming unlearning requests",
+    )
+    parser.add_argument(
+        "--candidate_anchors",
+        type=str,
+        default=None,
+        help="Candidate pool of anchor concepts (JSON/Python list string) for dynamic selection",
+    )
+    parser.add_argument(
+        "--anchor_history_path",
+        type=str,
+        default=None,
+        help="Path to JSON file tracking previously assigned anchors and update vectors across sequential steps",
+    )
     
     # Custom Training Arguments
     parser.add_argument(

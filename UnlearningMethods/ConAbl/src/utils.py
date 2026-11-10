@@ -221,6 +221,15 @@ def setup_concepts_list(args):
     for concept in args.concept_configs:
         anchor_target_concept = concept["anchor_target_concept"]
         if args.concept_type in ["object", "celeb", "character"]:
+            # If dynamic anchor assignment (--anchor_strategy) is enabled and only target is given, dynamically assign anchor
+            if "+" not in anchor_target_concept and getattr(args, "anchor_strategy", None):
+                from Regularizers.Anchor.anchor_selection import OBJECT_CANDIDATE_ANCHORS
+                cands = list(OBJECT_CANDIDATE_ANCHORS.keys())
+                selected_key = cands[0] if args.anchor_strategy == "shared" else cands[abs(hash(anchor_target_concept)) % len(cands)]
+                anchor_tok = OBJECT_CANDIDATE_ANCHORS[selected_key]["token"]
+                anchor_target_concept = f"{anchor_tok}+{anchor_target_concept.lower()}"
+                concept["anchor_target_concept"] = anchor_target_concept
+                print(f"[Adaptive Anchor] Dynamically mapped target -> '{anchor_target_concept}' (strategy={args.anchor_strategy})")
             # These concepts allow users to specify an anchor concept:
             # "anchor+target". We use only the target side for derived prompts.
             args.target_concepts.append(anchor_target_concept.split("+")[1])

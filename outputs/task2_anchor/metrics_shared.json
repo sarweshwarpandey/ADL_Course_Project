@@ -1,0 +1,153 @@
+{
+    "strategy": "shared",
+    "domain": "style",
+    "target_concepts": [
+        "Picasso",
+        "Van_Gogh",
+        "Cartoon",
+        "Ukiyoe",
+        "Neon_Lines",
+        "Winter"
+    ],
+    "candidate_anchors": [
+        "Classic_Painting",
+        "Line_Illustration",
+        "Geometric_Design",
+        "Atmospheric_Landscape",
+        "Realism_Photo"
+    ],
+    "assigned_anchors": [
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting"
+    ],
+    "anchor_usage_counts": {
+        "Classic_Painting": 6,
+        "Line_Illustration": 0,
+        "Geometric_Design": 0,
+        "Atmospheric_Landscape": 0,
+        "Realism_Photo": 0
+    },
+    "UA": 86.4,
+    "RA_I": 72.8,
+    "RA_C": 79.5,
+    "cumulative_parameter_drift": 19.768,
+    "net_displacement_l2": 15.4563,
+    "mean_update_cosine_similarity": 0.5214,
+    "adjacent_update_cosine_similarity": 0.5287,
+    "cumulative_drift_trajectory": [
+        2.2078,
+        4.6595,
+        7.9595,
+        11.4633,
+        15.4601,
+        19.768
+    ],
+    "steps": [
+        {
+            "step": 1,
+            "target_concept": "Picasso",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.2883,
+            "candidate_scores": {
+                "Classic_Painting": 0.2883,
+                "Line_Illustration": 0.2696,
+                "Geometric_Design": 0.2909,
+                "Atmospheric_Landscape": 0.2172,
+                "Realism_Photo": 0.0774
+            },
+            "step_update_l2_norm": 2.2078,
+            "adjacent_update_cosine_similarity": 0.0,
+            "mean_abs_update_similarity": 0.0,
+            "cumulative_drift": 2.2078
+        },
+        {
+            "step": 2,
+            "target_concept": "Van_Gogh",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.3648,
+            "candidate_scores": {
+                "Classic_Painting": 0.3648,
+                "Line_Illustration": 0.2379,
+                "Geometric_Design": 0.15,
+                "Atmospheric_Landscape": 0.3907,
+                "Realism_Photo": 0.1841
+            },
+            "step_update_l2_norm": 2.4517,
+            "adjacent_update_cosine_similarity": 0.4683,
+            "mean_abs_update_similarity": 0.4683,
+            "cumulative_drift": 4.6595
+        },
+        {
+            "step": 3,
+            "target_concept": "Cartoon",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.1595,
+            "candidate_scores": {
+                "Classic_Painting": 0.1595,
+                "Line_Illustration": 0.3127,
+                "Geometric_Design": 0.1511,
+                "Atmospheric_Landscape": 0.1696,
+                "Realism_Photo": 0.0832
+            },
+            "step_update_l2_norm": 3.3,
+            "adjacent_update_cosine_similarity": 0.4379,
+            "mean_abs_update_similarity": 0.4755,
+            "cumulative_drift": 7.9595
+        },
+        {
+            "step": 4,
+            "target_concept": "Ukiyoe",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.2486,
+            "candidate_scores": {
+                "Classic_Painting": 0.2486,
+                "Line_Illustration": 0.3027,
+                "Geometric_Design": 0.2639,
+                "Atmospheric_Landscape": 0.2146,
+                "Realism_Photo": 0.1022
+            },
+            "step_update_l2_norm": 3.5038,
+            "adjacent_update_cosine_similarity": 0.6074,
+            "mean_abs_update_similarity": 0.5325,
+            "cumulative_drift": 11.4633
+        },
+        {
+            "step": 5,
+            "target_concept": "Neon_Lines",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.22,
+            "candidate_scores": {
+                "Classic_Painting": 0.22,
+                "Line_Illustration": 0.3521,
+                "Geometric_Design": 0.3413,
+                "Atmospheric_Landscape": 0.219,
+                "Realism_Photo": 0.0876
+            },
+            "step_update_l2_norm": 3.9968,
+            "adjacent_update_cosine_similarity": 0.567,
+            "mean_abs_update_similarity": 0.5676,
+            "cumulative_drift": 15.4601
+        },
+        {
+            "step": 6,
+            "target_concept": "Winter",
+            "selected_anchor": "Classic_Painting",
+            "semantic_similarity": 0.2532,
+            "candidate_scores": {
+                "Classic_Painting": 0.2532,
+                "Line_Illustration": 0.2275,
+                "Geometric_Design": 0.2015,
+                "Atmospheric_Landscape": 0.3787,
+                "Realism_Photo": 0.246
+            },
+            "step_update_l2_norm": 4.3079,
+            "adjacent_update_cosine_similarity": 0.5627,
+            "mean_abs_update_similarity": 0.5068,
+            "cumulative_drift": 19.768
+        }
+    ]
+}

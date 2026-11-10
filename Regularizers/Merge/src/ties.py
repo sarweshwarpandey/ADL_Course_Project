@@ -182,9 +182,15 @@ def topk_values_mask(
         k_drop = d - k
         
         if k_drop > 0:
-            # Find threshold value
-            bottom_value = M[i].abs().kthvalue(k_drop, keepdim=True).values
-            mask = M[i].abs() >= bottom_value
+            # Find threshold value rapidly using quantile on a strided slice if tensor is very large
+            abs_row = M[i].abs()
+            if d > 65536:
+                stride = max(1, d // 16384)
+                threshold = torch.quantile(abs_row[::stride], 1.0 - float(current_top_k))
+            else:
+                vals, _ = torch.topk(abs_row, k=max(k, 1), largest=True, sorted=False)
+                threshold = vals.min()
+            mask = abs_row >= threshold
         else:
             # Keep all values
             mask = torch.ones_like(M[i], dtype=torch.bool)

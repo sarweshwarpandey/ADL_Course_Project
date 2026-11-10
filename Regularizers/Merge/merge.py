@@ -11,6 +11,8 @@ from diffusers import StableDiffusionPipeline, UNet2DConditionModel
 from src.ties import ties_merge
 from src.uniform import uniform_merge
 from src.task_arithmetic import task_arithmetic_merge
+from src.adaptive import adaptive_threshold_merge, compute_parameter_drift
+import json
 
 def main():
     parser = argparse.ArgumentParser(
@@ -38,7 +40,7 @@ def main():
         "--merge_method", 
         type=str, 
         default="ties",
-        choices=["uniform", "task_arithmetic", "ties"],
+        choices=["uniform", "task_arithmetic", "ties", "adaptive", "adaptive_ta"],
         help="Merging method to use"
     )
     parser.add_argument(
@@ -82,14 +84,28 @@ def main():
         default=1.0,
         help="Lambda scaling factor for task arithmetic"
     )
+
+    # Adaptive Threshold Merging arguments
+    parser.add_argument(
+        "--target_ua_threshold",
+        type=float,
+        default=95.0,
+        help="Target Unlearning Accuracy (UA %) threshold to estimate alpha* per concept"
+    )
+    parser.add_argument(
+        "--sweep_metrics_path",
+        type=str,
+        default=None,
+        help="Optional path to JSON file containing empirical UA(alpha) sweep evaluations"
+    )
     
     args = parser.parse_args()
     
     # Parse checkpoint list
-    checkpoint_paths = ast.literal_eval(args.ckpt_paths)
+    checkpoint_paths = ast.literal_eval(args.ckpt_paths) if args.ckpt_paths.strip().startswith("[") else [args.ckpt_paths]
     
     # Parse key_filter
-    if "[" in args.key_filter:
+    if args.key_filter and "[" in args.key_filter:
         args.key_filter = ast.literal_eval(args.key_filter)
     else:
         args.key_filter = [args.key_filter] if args.key_filter else None
@@ -142,9 +158,29 @@ def main():
             args.ties_topk,
             args.ties_merge_func
         )
+
+    elif args.merge_method in ["adaptive", "adaptive_ta"]:
+        base_type = "ties" if args.merge_method == "adaptive" else "task_arithmetic"
+        merged_state_dict, adaptive_meta = adaptive_threshold_merge(
+            base_state_dict,
+            ckpt_state_dicts,
+            args.key_filter,
+            target_ua_threshold=args.target_ua_threshold,
+            base_merge_type=base_type,
+            merge_func=args.ties_merge_func,
+            sweep_metrics_path=args.sweep_metrics_path,
+            return_metadata=True
+        )
+        meta_path = str(Path(args.save_path).with_suffix(".adaptive_meta.json"))
+        with open(meta_path, "w") as f:
+            json.dump(adaptive_meta, f, indent=4)
+        print(f"Saved adaptive threshold metadata to {meta_path}")
     
     else:
         raise ValueError(f"Unknown merge method: {args.merge_method}")
+    
+    drift = compute_parameter_drift(base_state_dict, merged_state_dict, args.key_filter)
+    print(f"Cumulative Parameter Drift (L2 Norm): {drift:.4f}")
     
     # Save new merged state dictionary
     if args.key_filter:

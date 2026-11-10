@@ -1,0 +1,948 @@
+{
+  "style": {
+    "shared": {
+      "strategy": "shared",
+      "domain": "style",
+      "target_concepts": [
+        "Picasso",
+        "Van_Gogh",
+        "Cartoon",
+        "Ukiyoe",
+        "Neon_Lines",
+        "Winter"
+      ],
+      "candidate_anchors": [
+        "Classic_Painting",
+        "Line_Illustration",
+        "Geometric_Design",
+        "Atmospheric_Landscape",
+        "Realism_Photo"
+      ],
+      "assigned_anchors": [
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting",
+        "Classic_Painting"
+      ],
+      "anchor_usage_counts": {
+        "Classic_Painting": 6,
+        "Line_Illustration": 0,
+        "Geometric_Design": 0,
+        "Atmospheric_Landscape": 0,
+        "Realism_Photo": 0
+      },
+      "UA": 86.4,
+      "RA_I": 72.8,
+      "RA_C": 79.5,
+      "cumulative_parameter_drift": 19.768,
+      "net_displacement_l2": 15.4563,
+      "mean_update_cosine_similarity": 0.5214,
+      "adjacent_update_cosine_similarity": 0.5287,
+      "cumulative_drift_trajectory": [
+        2.2078,
+        4.6595,
+        7.9595,
+        11.4633,
+        15.4601,
+        19.768
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Picasso",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.2883,
+          "candidate_scores": {
+            "Classic_Painting": 0.2883,
+            "Line_Illustration": 0.2696,
+            "Geometric_Design": 0.2909,
+            "Atmospheric_Landscape": 0.2172,
+            "Realism_Photo": 0.0774
+          },
+          "step_update_l2_norm": 2.2078,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 2.2078
+        },
+        {
+          "step": 2,
+          "target_concept": "Van_Gogh",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.3648,
+          "candidate_scores": {
+            "Classic_Painting": 0.3648,
+            "Line_Illustration": 0.2379,
+            "Geometric_Design": 0.15,
+            "Atmospheric_Landscape": 0.3907,
+            "Realism_Photo": 0.1841
+          },
+          "step_update_l2_norm": 2.4517,
+          "adjacent_update_cosine_similarity": 0.4683,
+          "mean_abs_update_similarity": 0.4683,
+          "cumulative_drift": 4.6595
+        },
+        {
+          "step": 3,
+          "target_concept": "Cartoon",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.1595,
+          "candidate_scores": {
+            "Classic_Painting": 0.1595,
+            "Line_Illustration": 0.3127,
+            "Geometric_Design": 0.1511,
+            "Atmospheric_Landscape": 0.1696,
+            "Realism_Photo": 0.0832
+          },
+          "step_update_l2_norm": 3.3,
+          "adjacent_update_cosine_similarity": 0.4379,
+          "mean_abs_update_similarity": 0.4755,
+          "cumulative_drift": 7.9595
+        },
+        {
+          "step": 4,
+          "target_concept": "Ukiyoe",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.2486,
+          "candidate_scores": {
+            "Classic_Painting": 0.2486,
+            "Line_Illustration": 0.3027,
+            "Geometric_Design": 0.2639,
+            "Atmospheric_Landscape": 0.2146,
+            "Realism_Photo": 0.1022
+          },
+          "step_update_l2_norm": 3.5038,
+          "adjacent_update_cosine_similarity": 0.6074,
+          "mean_abs_update_similarity": 0.5325,
+          "cumulative_drift": 11.4633
+        },
+        {
+          "step": 5,
+          "target_concept": "Neon_Lines",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.22,
+          "candidate_scores": {
+            "Classic_Painting": 0.22,
+            "Line_Illustration": 0.3521,
+            "Geometric_Design": 0.3413,
+            "Atmospheric_Landscape": 0.219,
+            "Realism_Photo": 0.0876
+          },
+          "step_update_l2_norm": 3.9968,
+          "adjacent_update_cosine_similarity": 0.567,
+          "mean_abs_update_similarity": 0.5676,
+          "cumulative_drift": 15.4601
+        },
+        {
+          "step": 6,
+          "target_concept": "Winter",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.2532,
+          "candidate_scores": {
+            "Classic_Painting": 0.2532,
+            "Line_Illustration": 0.2275,
+            "Geometric_Design": 0.2015,
+            "Atmospheric_Landscape": 0.3787,
+            "Realism_Photo": 0.246
+          },
+          "step_update_l2_norm": 4.3079,
+          "adjacent_update_cosine_similarity": 0.5627,
+          "mean_abs_update_similarity": 0.5068,
+          "cumulative_drift": 19.768
+        }
+      ]
+    },
+    "independent": {
+      "strategy": "independent",
+      "domain": "style",
+      "target_concepts": [
+        "Picasso",
+        "Van_Gogh",
+        "Cartoon",
+        "Ukiyoe",
+        "Neon_Lines",
+        "Winter"
+      ],
+      "candidate_anchors": [
+        "Classic_Painting",
+        "Line_Illustration",
+        "Geometric_Design",
+        "Atmospheric_Landscape",
+        "Realism_Photo"
+      ],
+      "assigned_anchors": [
+        "Classic_Painting",
+        "Line_Illustration",
+        "Geometric_Design",
+        "Atmospheric_Landscape",
+        "Realism_Photo",
+        "Classic_Painting"
+      ],
+      "anchor_usage_counts": {
+        "Classic_Painting": 2,
+        "Line_Illustration": 1,
+        "Geometric_Design": 1,
+        "Atmospheric_Landscape": 1,
+        "Realism_Photo": 1
+      },
+      "UA": 91.2,
+      "RA_I": 81.6,
+      "RA_C": 86.4,
+      "cumulative_parameter_drift": 12.4742,
+      "net_displacement_l2": 4.9847,
+      "mean_update_cosine_similarity": 0.1221,
+      "adjacent_update_cosine_similarity": 0.0806,
+      "cumulative_drift_trajectory": [
+        1.942,
+        3.9593,
+        6.1061,
+        8.1582,
+        10.4,
+        12.4742
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Picasso",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.2883,
+          "candidate_scores": {
+            "Classic_Painting": 0.2883,
+            "Line_Illustration": 0.2696,
+            "Geometric_Design": 0.2909,
+            "Atmospheric_Landscape": 0.2172,
+            "Realism_Photo": 0.0774
+          },
+          "step_update_l2_norm": 1.942,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 1.942
+        },
+        {
+          "step": 2,
+          "target_concept": "Van_Gogh",
+          "selected_anchor": "Line_Illustration",
+          "semantic_similarity": 0.2379,
+          "candidate_scores": {
+            "Classic_Painting": 0.3648,
+            "Line_Illustration": 0.2379,
+            "Geometric_Design": 0.15,
+            "Atmospheric_Landscape": 0.3907,
+            "Realism_Photo": 0.1841
+          },
+          "step_update_l2_norm": 2.0173,
+          "adjacent_update_cosine_similarity": -0.2185,
+          "mean_abs_update_similarity": 0.2185,
+          "cumulative_drift": 3.9593
+        },
+        {
+          "step": 3,
+          "target_concept": "Cartoon",
+          "selected_anchor": "Geometric_Design",
+          "semantic_similarity": 0.1511,
+          "candidate_scores": {
+            "Classic_Painting": 0.1595,
+            "Line_Illustration": 0.3127,
+            "Geometric_Design": 0.1511,
+            "Atmospheric_Landscape": 0.1696,
+            "Realism_Photo": 0.0832
+          },
+          "step_update_l2_norm": 2.1468,
+          "adjacent_update_cosine_similarity": -0.0171,
+          "mean_abs_update_similarity": 0.0488,
+          "cumulative_drift": 6.1061
+        },
+        {
+          "step": 4,
+          "target_concept": "Ukiyoe",
+          "selected_anchor": "Atmospheric_Landscape",
+          "semantic_similarity": 0.2146,
+          "candidate_scores": {
+            "Classic_Painting": 0.2486,
+            "Line_Illustration": 0.3027,
+            "Geometric_Design": 0.2639,
+            "Atmospheric_Landscape": 0.2146,
+            "Realism_Photo": 0.1022
+          },
+          "step_update_l2_norm": 2.0521,
+          "adjacent_update_cosine_similarity": 0.0525,
+          "mean_abs_update_similarity": 0.1153,
+          "cumulative_drift": 8.1582
+        },
+        {
+          "step": 5,
+          "target_concept": "Neon_Lines",
+          "selected_anchor": "Realism_Photo",
+          "semantic_similarity": 0.0876,
+          "candidate_scores": {
+            "Classic_Painting": 0.22,
+            "Line_Illustration": 0.3521,
+            "Geometric_Design": 0.3413,
+            "Atmospheric_Landscape": 0.219,
+            "Realism_Photo": 0.0876
+          },
+          "step_update_l2_norm": 2.2418,
+          "adjacent_update_cosine_similarity": 0.0786,
+          "mean_abs_update_similarity": 0.1004,
+          "cumulative_drift": 10.4
+        },
+        {
+          "step": 6,
+          "target_concept": "Winter",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.2532,
+          "candidate_scores": {
+            "Classic_Painting": 0.2532,
+            "Line_Illustration": 0.2275,
+            "Geometric_Design": 0.2015,
+            "Atmospheric_Landscape": 0.3787,
+            "Realism_Photo": 0.246
+          },
+          "step_update_l2_norm": 2.0742,
+          "adjacent_update_cosine_similarity": -0.0362,
+          "mean_abs_update_similarity": 0.1537,
+          "cumulative_drift": 12.4742
+        }
+      ]
+    },
+    "adaptive": {
+      "strategy": "adaptive",
+      "domain": "style",
+      "target_concepts": [
+        "Picasso",
+        "Van_Gogh",
+        "Cartoon",
+        "Ukiyoe",
+        "Neon_Lines",
+        "Winter"
+      ],
+      "candidate_anchors": [
+        "Classic_Painting",
+        "Line_Illustration",
+        "Geometric_Design",
+        "Atmospheric_Landscape",
+        "Realism_Photo"
+      ],
+      "assigned_anchors": [
+        "Geometric_Design",
+        "Classic_Painting",
+        "Line_Illustration",
+        "Atmospheric_Landscape",
+        "Line_Illustration",
+        "Realism_Photo"
+      ],
+      "anchor_usage_counts": {
+        "Classic_Painting": 1,
+        "Line_Illustration": 2,
+        "Geometric_Design": 1,
+        "Atmospheric_Landscape": 1,
+        "Realism_Photo": 1
+      },
+      "UA": 95.3,
+      "RA_I": 89.1,
+      "RA_C": 92.4,
+      "cumulative_parameter_drift": 7.6023,
+      "net_displacement_l2": 3.2303,
+      "mean_update_cosine_similarity": 0.0781,
+      "adjacent_update_cosine_similarity": 0.0586,
+      "cumulative_drift_trajectory": [
+        1.2648,
+        2.4576,
+        3.7012,
+        5.0404,
+        6.2937,
+        7.6023
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Picasso",
+          "selected_anchor": "Geometric_Design",
+          "semantic_similarity": 0.2909,
+          "candidate_scores": {
+            "Classic_Painting": 0.2883,
+            "Line_Illustration": 0.2696,
+            "Geometric_Design": 0.2909,
+            "Atmospheric_Landscape": 0.2172,
+            "Realism_Photo": 0.0774
+          },
+          "step_update_l2_norm": 1.2648,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 1.2648
+        },
+        {
+          "step": 2,
+          "target_concept": "Van_Gogh",
+          "selected_anchor": "Classic_Painting",
+          "semantic_similarity": 0.3648,
+          "candidate_scores": {
+            "Classic_Painting": 0.3531,
+            "Line_Illustration": 0.1806,
+            "Geometric_Design": -0.322,
+            "Atmospheric_Landscape": 0.3447,
+            "Realism_Photo": 0.1453
+          },
+          "step_update_l2_norm": 1.1928,
+          "adjacent_update_cosine_similarity": 0.0213,
+          "mean_abs_update_similarity": 0.0213,
+          "cumulative_drift": 2.4576
+        },
+        {
+          "step": 3,
+          "target_concept": "Cartoon",
+          "selected_anchor": "Line_Illustration",
+          "semantic_similarity": 0.3127,
+          "candidate_scores": {
+            "Classic_Painting": -0.1577,
+            "Line_Illustration": 0.2984,
+            "Geometric_Design": -0.1623,
+            "Atmospheric_Landscape": 0.153,
+            "Realism_Photo": 0.0625
+          },
+          "step_update_l2_norm": 1.2436,
+          "adjacent_update_cosine_similarity": -0.03,
+          "mean_abs_update_similarity": 0.026,
+          "cumulative_drift": 3.7012
+        },
+        {
+          "step": 4,
+          "target_concept": "Ukiyoe",
+          "selected_anchor": "Atmospheric_Landscape",
+          "semantic_similarity": 0.2146,
+          "candidate_scores": {
+            "Classic_Painting": -0.0246,
+            "Line_Illustration": 0.0132,
+            "Geometric_Design": -0.0307,
+            "Atmospheric_Landscape": 0.1923,
+            "Realism_Photo": 0.078
+          },
+          "step_update_l2_norm": 1.3392,
+          "adjacent_update_cosine_similarity": -0.0312,
+          "mean_abs_update_similarity": 0.0405,
+          "cumulative_drift": 5.0404
+        },
+        {
+          "step": 5,
+          "target_concept": "Neon_Lines",
+          "selected_anchor": "Line_Illustration",
+          "semantic_similarity": 0.3521,
+          "candidate_scores": {
+            "Classic_Painting": -0.0337,
+            "Line_Illustration": 0.0656,
+            "Geometric_Design": 0.065,
+            "Atmospheric_Landscape": -0.0611,
+            "Realism_Photo": 0.0574
+          },
+          "step_update_l2_norm": 1.2533,
+          "adjacent_update_cosine_similarity": -0.1272,
+          "mean_abs_update_similarity": 0.1937,
+          "cumulative_drift": 6.2937
+        },
+        {
+          "step": 6,
+          "target_concept": "Winter",
+          "selected_anchor": "Realism_Photo",
+          "semantic_similarity": 0.246,
+          "candidate_scores": {
+            "Classic_Painting": 0.0013,
+            "Line_Illustration": -0.2612,
+            "Geometric_Design": -0.0583,
+            "Atmospheric_Landscape": 0.1182,
+            "Realism_Photo": 0.2238
+          },
+          "step_update_l2_norm": 1.3086,
+          "adjacent_update_cosine_similarity": 0.0834,
+          "mean_abs_update_similarity": 0.0404,
+          "cumulative_drift": 7.6023
+        }
+      ]
+    }
+  },
+  "object": {
+    "shared": {
+      "strategy": "shared",
+      "domain": "object",
+      "target_concepts": [
+        "Bears",
+        "Birds",
+        "Fishes",
+        "Statues",
+        "Frogs",
+        "Towers"
+      ],
+      "candidate_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+      ],
+      "assigned_anchors": [
+        "Butterfly",
+        "Butterfly",
+        "Butterfly",
+        "Butterfly",
+        "Butterfly",
+        "Butterfly"
+      ],
+      "anchor_usage_counts": {
+        "Butterfly": 6,
+        "Flowers": 0,
+        "Horses": 0,
+        "Trees": 0,
+        "Architectures": 0,
+        "Sea": 0
+      },
+      "UA": 85.1,
+      "RA_I": 70.4,
+      "RA_C": 78.2,
+      "cumulative_parameter_drift": 19.3882,
+      "net_displacement_l2": 14.7057,
+      "mean_update_cosine_similarity": 0.4811,
+      "adjacent_update_cosine_similarity": 0.4377,
+      "cumulative_drift_trajectory": [
+        2.212,
+        4.565,
+        7.6422,
+        11.2851,
+        14.996,
+        19.3882
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Bears",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.2858,
+          "candidate_scores": {
+            "Butterfly": 0.2858,
+            "Flowers": 0.2637,
+            "Horses": 0.3549,
+            "Trees": 0.2609,
+            "Architectures": 0.1901,
+            "Sea": 0.2776
+          },
+          "step_update_l2_norm": 2.212,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 2.212
+        },
+        {
+          "step": 2,
+          "target_concept": "Birds",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.4141,
+          "candidate_scores": {
+            "Butterfly": 0.4141,
+            "Flowers": 0.3068,
+            "Horses": 0.2158,
+            "Trees": 0.2566,
+            "Architectures": 0.2059,
+            "Sea": 0.1831
+          },
+          "step_update_l2_norm": 2.353,
+          "adjacent_update_cosine_similarity": 0.4268,
+          "mean_abs_update_similarity": 0.4268,
+          "cumulative_drift": 4.565
+        },
+        {
+          "step": 3,
+          "target_concept": "Fishes",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.2559,
+          "candidate_scores": {
+            "Butterfly": 0.2559,
+            "Flowers": 0.3079,
+            "Horses": 0.1947,
+            "Trees": 0.2303,
+            "Architectures": 0.1306,
+            "Sea": 0.3894
+          },
+          "step_update_l2_norm": 3.0772,
+          "adjacent_update_cosine_similarity": 0.4024,
+          "mean_abs_update_similarity": 0.488,
+          "cumulative_drift": 7.6422
+        },
+        {
+          "step": 4,
+          "target_concept": "Statues",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.1954,
+          "candidate_scores": {
+            "Butterfly": 0.1954,
+            "Flowers": 0.1882,
+            "Horses": 0.1839,
+            "Trees": 0.3583,
+            "Architectures": 0.3957,
+            "Sea": 0.2259
+          },
+          "step_update_l2_norm": 3.6429,
+          "adjacent_update_cosine_similarity": 0.4485,
+          "mean_abs_update_similarity": 0.4836,
+          "cumulative_drift": 11.2851
+        },
+        {
+          "step": 5,
+          "target_concept": "Frogs",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.3179,
+          "candidate_scores": {
+            "Butterfly": 0.3179,
+            "Flowers": 0.3751,
+            "Horses": 0.252,
+            "Trees": 0.3644,
+            "Architectures": 0.1894,
+            "Sea": 0.3786
+          },
+          "step_update_l2_norm": 3.7109,
+          "adjacent_update_cosine_similarity": 0.5091,
+          "mean_abs_update_similarity": 0.4838,
+          "cumulative_drift": 14.996
+        },
+        {
+          "step": 6,
+          "target_concept": "Towers",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.227,
+          "candidate_scores": {
+            "Butterfly": 0.227,
+            "Flowers": 0.2468,
+            "Horses": 0.1679,
+            "Trees": 0.3674,
+            "Architectures": 0.4009,
+            "Sea": 0.1981
+          },
+          "step_update_l2_norm": 4.3922,
+          "adjacent_update_cosine_similarity": 0.4019,
+          "mean_abs_update_similarity": 0.4854,
+          "cumulative_drift": 19.3882
+        }
+      ]
+    },
+    "independent": {
+      "strategy": "independent",
+      "domain": "object",
+      "target_concepts": [
+        "Bears",
+        "Birds",
+        "Fishes",
+        "Statues",
+        "Frogs",
+        "Towers"
+      ],
+      "candidate_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+      ],
+      "assigned_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+      ],
+      "anchor_usage_counts": {
+        "Butterfly": 1,
+        "Flowers": 1,
+        "Horses": 1,
+        "Trees": 1,
+        "Architectures": 1,
+        "Sea": 1
+      },
+      "UA": 90.4,
+      "RA_I": 79.8,
+      "RA_C": 85.1,
+      "cumulative_parameter_drift": 11.9457,
+      "net_displacement_l2": 4.3233,
+      "mean_update_cosine_similarity": 0.1048,
+      "adjacent_update_cosine_similarity": 0.1478,
+      "cumulative_drift_trajectory": [
+        1.9457,
+        3.86,
+        5.9418,
+        7.7792,
+        9.8689,
+        11.9457
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Bears",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.2858,
+          "candidate_scores": {
+            "Butterfly": 0.2858,
+            "Flowers": 0.2637,
+            "Horses": 0.3549,
+            "Trees": 0.2609,
+            "Architectures": 0.1901,
+            "Sea": 0.2776
+          },
+          "step_update_l2_norm": 1.9457,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 1.9457
+        },
+        {
+          "step": 2,
+          "target_concept": "Birds",
+          "selected_anchor": "Flowers",
+          "semantic_similarity": 0.3068,
+          "candidate_scores": {
+            "Butterfly": 0.4141,
+            "Flowers": 0.3068,
+            "Horses": 0.2158,
+            "Trees": 0.2566,
+            "Architectures": 0.2059,
+            "Sea": 0.1831
+          },
+          "step_update_l2_norm": 1.9143,
+          "adjacent_update_cosine_similarity": -0.1378,
+          "mean_abs_update_similarity": 0.1378,
+          "cumulative_drift": 3.86
+        },
+        {
+          "step": 3,
+          "target_concept": "Fishes",
+          "selected_anchor": "Horses",
+          "semantic_similarity": 0.1947,
+          "candidate_scores": {
+            "Butterfly": 0.2559,
+            "Flowers": 0.3079,
+            "Horses": 0.1947,
+            "Trees": 0.2303,
+            "Architectures": 0.1306,
+            "Sea": 0.3894
+          },
+          "step_update_l2_norm": 2.0818,
+          "adjacent_update_cosine_similarity": -0.1675,
+          "mean_abs_update_similarity": 0.1082,
+          "cumulative_drift": 5.9418
+        },
+        {
+          "step": 4,
+          "target_concept": "Statues",
+          "selected_anchor": "Trees",
+          "semantic_similarity": 0.3583,
+          "candidate_scores": {
+            "Butterfly": 0.1954,
+            "Flowers": 0.1882,
+            "Horses": 0.1839,
+            "Trees": 0.3583,
+            "Architectures": 0.3957,
+            "Sea": 0.2259
+          },
+          "step_update_l2_norm": 1.8374,
+          "adjacent_update_cosine_similarity": -0.042,
+          "mean_abs_update_similarity": 0.0814,
+          "cumulative_drift": 7.7792
+        },
+        {
+          "step": 5,
+          "target_concept": "Frogs",
+          "selected_anchor": "Architectures",
+          "semantic_similarity": 0.1894,
+          "candidate_scores": {
+            "Butterfly": 0.3179,
+            "Flowers": 0.3751,
+            "Horses": 0.252,
+            "Trees": 0.3644,
+            "Architectures": 0.1894,
+            "Sea": 0.3786
+          },
+          "step_update_l2_norm": 2.0897,
+          "adjacent_update_cosine_similarity": -0.1121,
+          "mean_abs_update_similarity": 0.0888,
+          "cumulative_drift": 9.8689
+        },
+        {
+          "step": 6,
+          "target_concept": "Towers",
+          "selected_anchor": "Sea",
+          "semantic_similarity": 0.1981,
+          "candidate_scores": {
+            "Butterfly": 0.227,
+            "Flowers": 0.2468,
+            "Horses": 0.1679,
+            "Trees": 0.3674,
+            "Architectures": 0.4009,
+            "Sea": 0.1981
+          },
+          "step_update_l2_norm": 2.0768,
+          "adjacent_update_cosine_similarity": -0.2794,
+          "mean_abs_update_similarity": 0.1236,
+          "cumulative_drift": 11.9457
+        }
+      ]
+    },
+    "adaptive": {
+      "strategy": "adaptive",
+      "domain": "object",
+      "target_concepts": [
+        "Bears",
+        "Birds",
+        "Fishes",
+        "Statues",
+        "Frogs",
+        "Towers"
+      ],
+      "candidate_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+      ],
+      "assigned_anchors": [
+        "Horses",
+        "Butterfly",
+        "Sea",
+        "Architectures",
+        "Trees",
+        "Flowers"
+      ],
+      "anchor_usage_counts": {
+        "Butterfly": 1,
+        "Flowers": 1,
+        "Horses": 1,
+        "Trees": 1,
+        "Architectures": 1,
+        "Sea": 1
+      },
+      "UA": 94.8,
+      "RA_I": 87.6,
+      "RA_C": 91.5,
+      "cumulative_parameter_drift": 7.1796,
+      "net_displacement_l2": 2.8316,
+      "mean_update_cosine_similarity": 0.055,
+      "adjacent_update_cosine_similarity": 0.0791,
+      "cumulative_drift_trajectory": [
+        1.2024,
+        2.3472,
+        3.516,
+        4.6787,
+        5.8718,
+        7.1796
+      ],
+      "steps": [
+        {
+          "step": 1,
+          "target_concept": "Bears",
+          "selected_anchor": "Horses",
+          "semantic_similarity": 0.3549,
+          "candidate_scores": {
+            "Butterfly": 0.2858,
+            "Flowers": 0.2637,
+            "Horses": 0.3549,
+            "Trees": 0.2609,
+            "Architectures": 0.1901,
+            "Sea": 0.2776
+          },
+          "step_update_l2_norm": 1.2024,
+          "adjacent_update_cosine_similarity": 0.0,
+          "mean_abs_update_similarity": 0.0,
+          "cumulative_drift": 1.2024
+        },
+        {
+          "step": 2,
+          "target_concept": "Birds",
+          "selected_anchor": "Butterfly",
+          "semantic_similarity": 0.4141,
+          "candidate_scores": {
+            "Butterfly": 0.3941,
+            "Flowers": 0.2602,
+            "Horses": -0.1881,
+            "Trees": 0.2325,
+            "Architectures": 0.2024,
+            "Sea": 0.1363
+          },
+          "step_update_l2_norm": 1.1448,
+          "adjacent_update_cosine_similarity": 0.0364,
+          "mean_abs_update_similarity": 0.0364,
+          "cumulative_drift": 2.3472
+        },
+        {
+          "step": 3,
+          "target_concept": "Fishes",
+          "selected_anchor": "Sea",
+          "semantic_similarity": 0.3894,
+          "candidate_scores": {
+            "Butterfly": -0.0417,
+            "Flowers": 0.2762,
+            "Horses": -0.1148,
+            "Trees": 0.211,
+            "Architectures": 0.081,
+            "Sea": 0.37
+          },
+          "step_update_l2_norm": 1.1688,
+          "adjacent_update_cosine_similarity": 0.0452,
+          "mean_abs_update_similarity": 0.0353,
+          "cumulative_drift": 3.516
+        },
+        {
+          "step": 4,
+          "target_concept": "Statues",
+          "selected_anchor": "Architectures",
+          "semantic_similarity": 0.3957,
+          "candidate_scores": {
+            "Butterfly": -0.0652,
+            "Flowers": 0.1565,
+            "Horses": -0.0937,
+            "Trees": 0.334,
+            "Architectures": 0.376,
+            "Sea": -0.0246
+          },
+          "step_update_l2_norm": 1.1627,
+          "adjacent_update_cosine_similarity": -0.042,
+          "mean_abs_update_similarity": 0.0357,
+          "cumulative_drift": 4.6787
+        },
+        {
+          "step": 5,
+          "target_concept": "Frogs",
+          "selected_anchor": "Trees",
+          "semantic_similarity": 0.3644,
+          "candidate_scores": {
+            "Butterfly": 0.0908,
+            "Flowers": 0.3261,
+            "Horses": 0.0014,
+            "Trees": 0.3318,
+            "Architectures": -0.0499,
+            "Sea": 0.1398
+          },
+          "step_update_l2_norm": 1.1931,
+          "adjacent_update_cosine_similarity": 0.1274,
+          "mean_abs_update_similarity": 0.0594,
+          "cumulative_drift": 5.8718
+        },
+        {
+          "step": 6,
+          "target_concept": "Towers",
+          "selected_anchor": "Flowers",
+          "semantic_similarity": 0.2468,
+          "candidate_scores": {
+            "Butterfly": -0.011,
+            "Flowers": 0.2057,
+            "Horses": -0.0842,
+            "Trees": 0.176,
+            "Architectures": 0.1746,
+            "Sea": -0.0338
+          },
+          "step_update_l2_norm": 1.3078,
+          "adjacent_update_cosine_similarity": -0.1444,
+          "mean_abs_update_similarity": 0.0747,
+          "cumulative_drift": 7.1796
+        }
+      ]
+    }
+  }
+}

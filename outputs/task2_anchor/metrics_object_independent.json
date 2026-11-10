@@ -1,0 +1,161 @@
+{
+    "strategy": "independent",
+    "domain": "object",
+    "target_concepts": [
+        "Bears",
+        "Birds",
+        "Fishes",
+        "Statues",
+        "Frogs",
+        "Towers"
+    ],
+    "candidate_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+    ],
+    "assigned_anchors": [
+        "Butterfly",
+        "Flowers",
+        "Horses",
+        "Trees",
+        "Architectures",
+        "Sea"
+    ],
+    "anchor_usage_counts": {
+        "Butterfly": 1,
+        "Flowers": 1,
+        "Horses": 1,
+        "Trees": 1,
+        "Architectures": 1,
+        "Sea": 1
+    },
+    "UA": 90.4,
+    "RA_I": 79.8,
+    "RA_C": 85.1,
+    "cumulative_parameter_drift": 11.9457,
+    "net_displacement_l2": 4.3233,
+    "mean_update_cosine_similarity": 0.1048,
+    "adjacent_update_cosine_similarity": 0.1478,
+    "cumulative_drift_trajectory": [
+        1.9457,
+        3.86,
+        5.9418,
+        7.7792,
+        9.8689,
+        11.9457
+    ],
+    "steps": [
+        {
+            "step": 1,
+            "target_concept": "Bears",
+            "selected_anchor": "Butterfly",
+            "semantic_similarity": 0.2858,
+            "candidate_scores": {
+                "Butterfly": 0.2858,
+                "Flowers": 0.2637,
+                "Horses": 0.3549,
+                "Trees": 0.2609,
+                "Architectures": 0.1901,
+                "Sea": 0.2776
+            },
+            "step_update_l2_norm": 1.9457,
+            "adjacent_update_cosine_similarity": 0.0,
+            "mean_abs_update_similarity": 0.0,
+            "cumulative_drift": 1.9457
+        },
+        {
+            "step": 2,
+            "target_concept": "Birds",
+            "selected_anchor": "Flowers",
+            "semantic_similarity": 0.3068,
+            "candidate_scores": {
+                "Butterfly": 0.4141,
+                "Flowers": 0.3068,
+                "Horses": 0.2158,
+                "Trees": 0.2566,
+                "Architectures": 0.2059,
+                "Sea": 0.1831
+            },
+            "step_update_l2_norm": 1.9143,
+            "adjacent_update_cosine_similarity": -0.1378,
+            "mean_abs_update_similarity": 0.1378,
+            "cumulative_drift": 3.86
+        },
+        {
+            "step": 3,
+            "target_concept": "Fishes",
+            "selected_anchor": "Horses",
+            "semantic_similarity": 0.1947,
+            "candidate_scores": {
+                "Butterfly": 0.2559,
+                "Flowers": 0.3079,
+                "Horses": 0.1947,
+                "Trees": 0.2303,
+                "Architectures": 0.1306,
+                "Sea": 0.3894
+            },
+            "step_update_l2_norm": 2.0818,
+            "adjacent_update_cosine_similarity": -0.1675,
+            "mean_abs_update_similarity": 0.1082,
+            "cumulative_drift": 5.9418
+        },
+        {
+            "step": 4,
+            "target_concept": "Statues",
+            "selected_anchor": "Trees",
+            "semantic_similarity": 0.3583,
+            "candidate_scores": {
+                "Butterfly": 0.1954,
+                "Flowers": 0.1882,
+                "Horses": 0.1839,
+                "Trees": 0.3583,
+                "Architectures": 0.3957,
+                "Sea": 0.2259
+            },
+            "step_update_l2_norm": 1.8374,
+            "adjacent_update_cosine_similarity": -0.042,
+            "mean_abs_update_similarity": 0.0814,
+            "cumulative_drift": 7.7792
+        },
+        {
+            "step": 5,
+            "target_concept": "Frogs",
+            "selected_anchor": "Architectures",
+            "semantic_similarity": 0.1894,
+            "candidate_scores": {
+                "Butterfly": 0.3179,
+                "Flowers": 0.3751,
+                "Horses": 0.252,
+                "Trees": 0.3644,
+                "Architectures": 0.1894,
+                "Sea": 0.3786
+            },
+            "step_update_l2_norm": 2.0897,
+            "adjacent_update_cosine_similarity": -0.1121,
+            "mean_abs_update_similarity": 0.0888,
+            "cumulative_drift": 9.8689
+        },
+        {
+            "step": 6,
+            "target_concept": "Towers",
+            "selected_anchor": "Sea",
+            "semantic_similarity": 0.1981,
+            "candidate_scores": {
+                "Butterfly": 0.227,
+                "Flowers": 0.2468,
+                "Horses": 0.1679,
+                "Trees": 0.3674,
+                "Architectures": 0.4009,
+                "Sea": 0.1981
+            },
+            "step_update_l2_norm": 2.0768,
+            "adjacent_update_cosine_similarity": -0.2794,
+            "mean_abs_update_similarity": 0.1236,
+            "cumulative_drift": 11.9457
+        }
+    ]
+}
