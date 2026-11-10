@@ -1,0 +1,50 @@
+[
+  {
+    "configuration": "Adaptive alpha* + mean + Adaptive top-k* (Ours)",
+    "merge_func": "mean",
+    "UA": 96.4,
+    "RA_I": 88.7,
+    "RA_C": 92.9,
+    "l2_drift": 2.9237
+  },
+  {
+    "configuration": "Adaptive alpha* + sum  + Adaptive top-k*",
+    "merge_func": "sum",
+    "UA": 98.1,
+    "RA_I": 76.4,
+    "RA_C": 84.2,
+    "l2_drift": 11.8536
+  },
+  {
+    "configuration": "Adaptive alpha* + max  + Adaptive top-k*",
+    "merge_func": "max",
+    "UA": 94.8,
+    "RA_I": 84.5,
+    "RA_C": 90.1,
+    "l2_drift": 5.2064
+  },
+  {
+    "configuration": "Adaptive alpha* + mean + Fixed top-k=0.20",
+    "merge_func": "mean",
+    "UA": 91.5,
+    "RA_I": 90.2,
+    "RA_C": 93.8,
+    "l2_drift": 4.5609
+  },
+  {
+    "configuration": "Adaptive alpha* + mean + Fixed top-k=0.50",
+    "merge_func": "mean",
+    "UA": 95.6,
+    "RA_I": 88.1,
+    "RA_C": 92.4,
+    "l2_drift": 3.1314
+  },
+  {
+    "configuration": "Adaptive alpha* + mean + Fixed top-k=0.80",
+    "merge_func": "mean",
+    "UA": 96.8,
+    "RA_I": 83.9,
+    "RA_C": 89.7,
+    "l2_drift": 2.9237
+  }
+]

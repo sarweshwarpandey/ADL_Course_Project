@@ -1,0 +1,97 @@
+[
+  {
+    "pool_size": 2,
+    "candidates": [
+      "Classic_Painting",
+      "Line_Illustration"
+    ],
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Line_Illustration",
+      "Classic_Painting",
+      "Line_Illustration",
+      "Classic_Painting"
+    ],
+    "cumulative_drift": 8.081,
+    "mean_update_cosine_similarity": 0.2481
+  },
+  {
+    "pool_size": 3,
+    "candidates": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Geometric_Design"
+    ],
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Classic_Painting"
+    ],
+    "cumulative_drift": 7.8778,
+    "mean_update_cosine_similarity": 0.1588
+  },
+  {
+    "pool_size": 4,
+    "candidates": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Atmospheric_Landscape"
+    ],
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Atmospheric_Landscape",
+      "Geometric_Design"
+    ],
+    "cumulative_drift": 7.4892,
+    "mean_update_cosine_similarity": 0.0927
+  },
+  {
+    "pool_size": 5,
+    "candidates": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Atmospheric_Landscape",
+      "Realism_Photo"
+    ],
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Realism_Photo",
+      "Geometric_Design"
+    ],
+    "cumulative_drift": 7.6074,
+    "mean_update_cosine_similarity": 0.0669
+  },
+  {
+    "pool_size": 6,
+    "candidates": [
+      "Classic_Painting",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Atmospheric_Landscape",
+      "Realism_Photo",
+      "object"
+    ],
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "object",
+      "Geometric_Design"
+    ],
+    "cumulative_drift": 7.5151,
+    "mean_update_cosine_similarity": 0.0779
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "1. Default Order (Fine Art -> Graphic -> Atmospheric)": {
+    "sequence": [
+      "Picasso",
+      "Van_Gogh",
+      "Cartoon",
+      "Ukiyoe",
+      "Neon_Lines",
+      "Winter"
+    ],
+    "shared_drift": 19.6528,
+    "independent_drift": 12.1499,
+    "adaptive_drift": 7.6947,
+    "adaptive_assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Realism_Photo",
+      "Atmospheric_Landscape"
+    ],
+    "adaptive_update_sim": 0.0747
+  },
+  "2. Reverse Order (Atmospheric -> Graphic -> Fine Art)": {
+    "sequence": [
+      "Winter",
+      "Neon_Lines",
+      "Ukiyoe",
+      "Cartoon",
+      "Van_Gogh",
+      "Picasso"
+    ],
+    "shared_drift": 19.3909,
+    "independent_drift": 12.1093,
+    "adaptive_drift": 7.7286,
+    "adaptive_assigned_anchors": [
+      "Atmospheric_Landscape",
+      "Geometric_Design",
+      "Line_Illustration",
+      "Classic_Painting",
+      "Realism_Photo",
+      "Classic_Painting"
+    ],
+    "adaptive_update_sim": 0.0648
+  },
+  "3. Clustered Order (Similar Styles Back-to-Back)": {
+    "sequence": [
+      "Picasso",
+      "Van_Gogh",
+      "Ukiyoe",
+      "Cartoon",
+      "Neon_Lines",
+      "Winter"
+    ],
+    "shared_drift": 19.661,
+    "independent_drift": 12.3341,
+    "adaptive_drift": 7.7113,
+    "adaptive_assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Realism_Photo",
+      "Atmospheric_Landscape"
+    ],
+    "adaptive_update_sim": 0.0756
+  },
+  "4. Alternating Contrast Order": {
+    "sequence": [
+      "Winter",
+      "Picasso",
+      "Cartoon",
+      "Van_Gogh",
+      "Neon_Lines",
+      "Ukiyoe"
+    ],
+    "shared_drift": 19.6294,
+    "independent_drift": 12.1358,
+    "adaptive_drift": 7.6152,
+    "adaptive_assigned_anchors": [
+      "Atmospheric_Landscape",
+      "Classic_Painting",
+      "Line_Illustration",
+      "Realism_Photo",
+      "Geometric_Design",
+      "Line_Illustration"
+    ],
+    "adaptive_update_sim": 0.0785
+  }
+}

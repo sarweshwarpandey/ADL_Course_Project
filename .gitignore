@@ -19,4 +19,5 @@ ex_readme.md
 *.ckpt
 *.safetensors
 CUIG/
+adl_cp/
 

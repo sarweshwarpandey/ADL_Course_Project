@@ -1,0 +1,112 @@
+[
+  {
+    "variant": "1. Pure Semantic Similarity Only (w_sem=1, w_sim=0, w_cong=0)",
+    "weights": {
+      "w_sem": 1.0,
+      "w_sim": 0.0,
+      "w_cong": 0.0
+    },
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Classic_Painting",
+      "Line_Illustration",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Atmospheric_Landscape"
+    ],
+    "unique_anchors_used": 4,
+    "cumulative_drift": 7.6643,
+    "mean_update_cos_sim": 0.1216,
+    "UA": 93.1,
+    "RA_I": 83.4,
+    "RA_C": 88.2
+  },
+  {
+    "variant": "2. Pure Update-Orthogonality Only (w_sem=0, w_sim=1, w_cong=0)",
+    "weights": {
+      "w_sem": 0.0,
+      "w_sim": 1.0,
+      "w_cong": 0.0
+    },
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Realism_Photo",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Classic_Painting"
+    ],
+    "unique_anchors_used": 5,
+    "cumulative_drift": 7.8985,
+    "mean_update_cos_sim": 0.0882,
+    "UA": 90.8,
+    "RA_I": 84.1,
+    "RA_C": 87.9
+  },
+  {
+    "variant": "3. Semantic + Update Sim (No Congestion, w_cong=0)",
+    "weights": {
+      "w_sem": 1.0,
+      "w_sim": 0.55,
+      "w_cong": 0.0
+    },
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Geometric_Design",
+      "Atmospheric_Landscape"
+    ],
+    "unique_anchors_used": 4,
+    "cumulative_drift": 7.6863,
+    "mean_update_cos_sim": 0.1279,
+    "UA": 94.2,
+    "RA_I": 86.8,
+    "RA_C": 90.7
+  },
+  {
+    "variant": "4. Semantic + Congestion (No Update Sim, w_sim=0)",
+    "weights": {
+      "w_sem": 1.0,
+      "w_sim": 0.0,
+      "w_cong": 0.45
+    },
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Geometric_Design",
+      "Realism_Photo"
+    ],
+    "unique_anchors_used": 5,
+    "cumulative_drift": 7.5927,
+    "mean_update_cos_sim": 0.1006,
+    "UA": 94.0,
+    "RA_I": 86.2,
+    "RA_C": 90.3
+  },
+  {
+    "variant": "5. Full Adaptive Criterion (w_sem=1, w_sim=0.55, w_cong=0.45)",
+    "weights": {
+      "w_sem": 1.0,
+      "w_sim": 0.55,
+      "w_cong": 0.45
+    },
+    "assigned_anchors": [
+      "Classic_Painting",
+      "Atmospheric_Landscape",
+      "Line_Illustration",
+      "Geometric_Design",
+      "Realism_Photo",
+      "Atmospheric_Landscape"
+    ],
+    "unique_anchors_used": 5,
+    "cumulative_drift": 7.7447,
+    "mean_update_cos_sim": 0.0954,
+    "UA": 95.3,
+    "RA_I": 89.1,
+    "RA_C": 92.4
+  }
+]

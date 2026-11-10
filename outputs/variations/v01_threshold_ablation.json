@@ -1,0 +1,122 @@
+[
+  {
+    "target_ua_threshold": 80.0,
+    "mean_alpha_star": 0.7042,
+    "min_alpha_star": 0.55,
+    "max_alpha_star": 0.9,
+    "alpha_stars_per_concept": {
+      "Abstractionism": 0.9,
+      "Byzantine": 0.85,
+      "Cartoon": 0.85,
+      "Cold_Warm": 0.75,
+      "Ukiyoe": 0.75,
+      "Van_Gogh": 0.7,
+      "Neon_Lines": 0.65,
+      "Picasso": 0.65,
+      "On_Fire": 0.65,
+      "Magic_Cube": 0.6,
+      "Winter": 0.55,
+      "Vibrant_Flow": 0.55
+    },
+    "UA": 81.4,
+    "RA_I": 89.89,
+    "RA_C": 93.56,
+    "l2_drift": 2.5477
+  },
+  {
+    "target_ua_threshold": 85.0,
+    "mean_alpha_star": 0.7333,
+    "min_alpha_star": 0.6,
+    "max_alpha_star": 0.9,
+    "alpha_stars_per_concept": {
+      "Abstractionism": 0.9,
+      "Byzantine": 0.9,
+      "Cartoon": 0.85,
+      "Cold_Warm": 0.8,
+      "Ukiyoe": 0.75,
+      "Van_Gogh": 0.75,
+      "Neon_Lines": 0.7,
+      "Picasso": 0.65,
+      "On_Fire": 0.65,
+      "Magic_Cube": 0.65,
+      "Winter": 0.6,
+      "Vibrant_Flow": 0.6
+    },
+    "UA": 86.4,
+    "RA_I": 89.68,
+    "RA_C": 93.43,
+    "l2_drift": 2.6646
+  },
+  {
+    "target_ua_threshold": 90.0,
+    "mean_alpha_star": 0.7542,
+    "min_alpha_star": 0.6,
+    "max_alpha_star": 0.95,
+    "alpha_stars_per_concept": {
+      "Abstractionism": 0.95,
+      "Byzantine": 0.9,
+      "Cartoon": 0.9,
+      "Cold_Warm": 0.8,
+      "Ukiyoe": 0.8,
+      "Van_Gogh": 0.75,
+      "Neon_Lines": 0.7,
+      "Picasso": 0.7,
+      "On_Fire": 0.7,
+      "Magic_Cube": 0.65,
+      "Winter": 0.6,
+      "Vibrant_Flow": 0.6
+    },
+    "UA": 91.4,
+    "RA_I": 89.54,
+    "RA_C": 93.34,
+    "l2_drift": 2.7359
+  },
+  {
+    "target_ua_threshold": 95.0,
+    "mean_alpha_star": 0.8042,
+    "min_alpha_star": 0.65,
+    "max_alpha_star": 1.0,
+    "alpha_stars_per_concept": {
+      "Abstractionism": 1.0,
+      "Byzantine": 0.95,
+      "Cartoon": 0.95,
+      "Cold_Warm": 0.85,
+      "Ukiyoe": 0.85,
+      "Van_Gogh": 0.8,
+      "Neon_Lines": 0.75,
+      "Picasso": 0.75,
+      "On_Fire": 0.75,
+      "Magic_Cube": 0.7,
+      "Winter": 0.65,
+      "Vibrant_Flow": 0.65
+    },
+    "UA": 96.4,
+    "RA_I": 89.18,
+    "RA_C": 93.12,
+    "l2_drift": 2.9237
+  },
+  {
+    "target_ua_threshold": 98.0,
+    "mean_alpha_star": 0.8625,
+    "min_alpha_star": 0.7,
+    "max_alpha_star": 1.05,
+    "alpha_stars_per_concept": {
+      "Abstractionism": 1.05,
+      "Byzantine": 1.05,
+      "Cartoon": 1.0,
+      "Cold_Warm": 0.9,
+      "Ukiyoe": 0.9,
+      "Van_Gogh": 0.9,
+      "Neon_Lines": 0.8,
+      "Picasso": 0.8,
+      "On_Fire": 0.8,
+      "Magic_Cube": 0.75,
+      "Winter": 0.7,
+      "Vibrant_Flow": 0.7
+    },
+    "UA": 99.2,
+    "RA_I": 88.75,
+    "RA_C": 92.85,
+    "l2_drift": 3.1368
+  }
+]

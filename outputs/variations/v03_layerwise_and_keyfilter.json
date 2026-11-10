@@ -1,0 +1,37 @@
+{
+  "block_alphas": {
+    "down_blocks": 0.6772,
+    "mid_block": 0.6769,
+    "up_blocks": 0.6777
+  },
+  "results": [
+    {
+      "variant": "Only Cross-Attention Keys (attn2.to_k)",
+      "UA": 84.2,
+      "RA_I": 91.4,
+      "RA_C": 94.1,
+      "drift": 2.0538
+    },
+    {
+      "variant": "Only Cross-Attention Values (attn2.to_v)",
+      "UA": 89.6,
+      "RA_I": 90.1,
+      "RA_C": 93.5,
+      "drift": 2.0679
+    },
+    {
+      "variant": "Concept-Wise KV Cross-Attention (to_k + to_v)",
+      "UA": 96.4,
+      "RA_I": 88.7,
+      "RA_C": 92.9,
+      "drift": 2.9237
+    },
+    {
+      "variant": "Layer/Block-Wise Adaptive KV Thresholds (alpha_il)",
+      "UA": 96.9,
+      "RA_I": 89.4,
+      "RA_C": 93.2,
+      "drift": 0.5494
+    }
+  ]
+}
