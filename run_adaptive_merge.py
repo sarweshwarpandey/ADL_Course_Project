@@ -90,16 +90,17 @@ def build_realistic_concept_checkpoints(
         sens = difficulty_profile.get(concept, 0.85)
         sd = {}
         for k, v in base_state_dict.items():
+            v_cpu = v.detach().cpu()
             if "attn2.to_k" in k or "attn2.to_v" in k:
                 # Structured low-rank + sparse cross-attention update
-                noise = torch.randn(v.shape, generator=gen, dtype=torch.float32)
+                noise = torch.randn(v_cpu.shape, generator=gen, dtype=torch.float32)
                 # Induce concept-specific sparsity and norm scale
-                mask = (torch.rand(v.shape, generator=gen) < (0.35 + 0.25 * sens)).float()
-                scale = (0.045 / sens) * v.float().std().clamp(min=1e-3)
-                delta = (noise * mask * scale).to(v.dtype)
-                sd[k] = v.cpu() + delta
+                mask = (torch.rand(v_cpu.shape, generator=gen) < (0.35 + 0.25 * sens)).float()
+                scale = (0.045 / sens) * v_cpu.float().std().clamp(min=1e-3).item()
+                delta = (noise * mask * scale).to(v_cpu.dtype)
+                sd[k] = v_cpu + delta
             else:
-                sd[k] = v.cpu()
+                sd[k] = v_cpu
         ckpt_sds.append(sd)
     return ckpt_sds
 
@@ -366,10 +367,19 @@ def main():
     base_model_path = Path(args.base_model_dir)
     if args.use_full_pipeline or (base_model_path.exists() and (base_model_path / "model_index.json").exists()):
         from diffusers import StableDiffusionPipeline
-        print(f"Loading base diffusion model from {args.base_model_dir} on {args.device}...")
-        dtype = torch.float16 if "cuda" in args.device else torch.float32
-        pipe = StableDiffusionPipeline.from_pretrained(args.base_model_dir, torch_dtype=dtype).to(args.device)
-        base_unet_sd = pipe.unet.state_dict()
+        print(f"Loading base diffusion model from {args.base_model_dir}...")
+        pipe = StableDiffusionPipeline.from_pretrained(args.base_model_dir, torch_dtype=torch.float32)
+        # Keep cross-attention state dict on CPU during multi-checkpoint merging (matches CUIG merge.py)
+        full_sd = pipe.unet.state_dict()
+        base_unet_sd = {
+            k: v.detach().cpu()
+            for k, v in full_sd.items()
+            if any(f in k for f in key_filter)
+        }
+        print(f"Extracted {len(base_unet_sd)} cross-attention (`attn2.to_k`, `attn2.to_v`) tensors from UnlearnCanvas UNet ({len(full_sd)} total layers).")
+        del pipe
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
     else:
         print("Using representative Stable Diffusion cross-attention U-Net state dict (`attn2.to_k`, `attn2.to_v`)...")
         print("  (Tip: Run `bash download_checkpoints.sh` and pass `--use_full_pipeline` on your GPU lab PC for full image sampling)")
