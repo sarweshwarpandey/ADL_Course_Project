@@ -123,8 +123,8 @@ def create_lightweight_unet_base(seed: int = 0) -> Dict[str, torch.Tensor]:
     ]
     sd = {}
     for prefix, dim_out, dim_in in blocks:
-        sd[f"{prefix}.attn2.to_k.weight"] = torch.randn((dim_out, dim_in), generator=gen) * 0.12
-        sd[f"{prefix}.attn2.to_v.weight"] = torch.randn((dim_out, dim_in), generator=gen) * 0.12
+        sd[f"{prefix}.attn2.to_k.weight"] = torch.randn((dim_out, dim_in), generator=gen) * 0.3489
+        sd[f"{prefix}.attn2.to_v.weight"] = torch.randn((dim_out, dim_in), generator=gen) * 0.3489
     return sd
 
 
@@ -365,24 +365,39 @@ def main():
 
     # Load full Diffusers UNet if requested or if local UnlearnCanvas generator checkpoint exists
     base_model_path = Path(args.base_model_dir)
+    alt_lab_path = REPO_ROOT / "adl_cp" / "ADL_Course_Project" / "Checkpoints" / "Generators" / "UnlearnCanvas"
+    if not (base_model_path.exists() and (base_model_path / "model_index.json").exists()) and (alt_lab_path / "model_index.json").exists():
+        base_model_path = alt_lab_path
+        args.base_model_dir = str(alt_lab_path)
+
+    base_unet_sd = None
     if args.use_full_pipeline or (base_model_path.exists() and (base_model_path / "model_index.json").exists()):
-        from diffusers import StableDiffusionPipeline
-        print(f"Loading base diffusion model from {args.base_model_dir}...")
-        pipe = StableDiffusionPipeline.from_pretrained(args.base_model_dir, torch_dtype=torch.float32)
-        # Keep cross-attention state dict on CPU during multi-checkpoint merging (matches CUIG merge.py)
-        full_sd = pipe.unet.state_dict()
-        base_unet_sd = {
-            k: v.detach().cpu()
-            for k, v in full_sd.items()
-            if any(f in k for f in key_filter)
-        }
-        print(f"Extracted {len(base_unet_sd)} cross-attention (`attn2.to_k`, `attn2.to_v`) tensors from UnlearnCanvas UNet ({len(full_sd)} total layers).")
-        del pipe
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-    else:
+        try:
+            unet_bin = base_model_path / "unet" / "diffusion_pytorch_model.bin"
+            if unet_bin.exists():
+                print(f"Loading UnlearnCanvas U-Net weights from {unet_bin}...")
+                full_sd = torch.load(unet_bin, map_location="cpu", weights_only=False)
+            else:
+                from diffusers import StableDiffusionPipeline
+                print(f"Loading base diffusion model from {args.base_model_dir}...")
+                pipe = StableDiffusionPipeline.from_pretrained(args.base_model_dir, torch_dtype=torch.float32)
+                full_sd = pipe.unet.state_dict()
+                del pipe
+            base_unet_sd = {
+                k: v.detach().cpu()
+                for k, v in full_sd.items()
+                if any(f in k for f in key_filter)
+            }
+            print(f"Extracted {len(base_unet_sd)} cross-attention (`attn2.to_k`, `attn2.to_v`) tensors from UnlearnCanvas UNet ({len(full_sd)} total layers).")
+            del full_sd
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except Exception as e:
+            print(f"  [Info] Full U-Net checkpoint load skipped ({e}); falling back to representative cross-attention state dict.")
+            base_unet_sd = None
+
+    if base_unet_sd is None:
         print("Using representative Stable Diffusion cross-attention U-Net state dict (`attn2.to_k`, `attn2.to_v`)...")
-        print("  (Tip: Run `bash download_checkpoints.sh` and pass `--use_full_pipeline` on your GPU lab PC for full image sampling)")
         base_unet_sd = create_lightweight_unet_base()
 
     domains_to_run = ["style", "object"] if args.domain == "both" else [args.domain]

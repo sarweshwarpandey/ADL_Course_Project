@@ -36,52 +36,52 @@
       "UA": 86.4,
       "RA_I": 72.8,
       "RA_C": 79.5,
-      "cumulative_parameter_drift": 18.6784,
-      "net_displacement_l2": 14.3808,
-      "mean_update_cosine_similarity": 0.4914,
+      "cumulative_parameter_drift": 18.6783,
+      "net_displacement_l2": 14.3812,
+      "mean_update_cosine_similarity": 0.4915,
       "adjacent_update_cosine_similarity": 0.5523,
       "cumulative_drift_trajectory": [
-        1.9771,
-        4.3563,
+        1.9772,
+        4.3562,
         7.1259,
-        10.3967,
+        10.3964,
         14.3809,
-        18.6784
+        18.6783
       ],
       "steps": [
         {
           "step": 1,
           "target_concept": "Picasso",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.4241,
+          "semantic_similarity": 0.424,
           "candidate_scores": {
-            "Classic_Painting": 0.4241,
+            "Classic_Painting": 0.424,
             "Line_Illustration": 0.2995,
             "Geometric_Design": 0.4615,
             "Atmospheric_Landscape": 0.2646,
             "Realism_Photo": 0.3036
           },
-          "step_update_l2_norm": 1.9771,
+          "step_update_l2_norm": 1.9772,
           "adjacent_update_cosine_similarity": 0.0,
           "mean_abs_update_similarity": 0.0,
-          "cumulative_drift": 1.9771
+          "cumulative_drift": 1.9772
         },
         {
           "step": 2,
           "target_concept": "Van_Gogh",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.401,
+          "semantic_similarity": 0.4011,
           "candidate_scores": {
-            "Classic_Painting": 0.401,
+            "Classic_Painting": 0.4011,
             "Line_Illustration": 0.1177,
             "Geometric_Design": 0.1374,
             "Atmospheric_Landscape": 0.2234,
             "Realism_Photo": 0.209
           },
-          "step_update_l2_norm": 2.3792,
-          "adjacent_update_cosine_similarity": 0.5528,
-          "mean_abs_update_similarity": 0.5528,
-          "cumulative_drift": 4.3563
+          "step_update_l2_norm": 2.379,
+          "adjacent_update_cosine_similarity": 0.5527,
+          "mean_abs_update_similarity": 0.5527,
+          "cumulative_drift": 4.3562
         },
         {
           "step": 3,
@@ -90,13 +90,13 @@
           "semantic_similarity": 0.3891,
           "candidate_scores": {
             "Classic_Painting": 0.3891,
-            "Line_Illustration": 0.5163,
-            "Geometric_Design": 0.3365,
+            "Line_Illustration": 0.5162,
+            "Geometric_Design": 0.3366,
             "Atmospheric_Landscape": 0.2899,
             "Realism_Photo": 0.2157
           },
-          "step_update_l2_norm": 2.7696,
-          "adjacent_update_cosine_similarity": 0.363,
+          "step_update_l2_norm": 2.7697,
+          "adjacent_update_cosine_similarity": 0.3629,
           "mean_abs_update_similarity": 0.3997,
           "cumulative_drift": 7.1259
         },
@@ -104,32 +104,32 @@
           "step": 4,
           "target_concept": "Ukiyoe",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.3376,
+          "semantic_similarity": 0.3377,
           "candidate_scores": {
-            "Classic_Painting": 0.3376,
+            "Classic_Painting": 0.3377,
             "Line_Illustration": 0.5459,
-            "Geometric_Design": 0.3372,
-            "Atmospheric_Landscape": 0.2461,
-            "Realism_Photo": 0.1879
+            "Geometric_Design": 0.3374,
+            "Atmospheric_Landscape": 0.2462,
+            "Realism_Photo": 0.188
           },
-          "step_update_l2_norm": 3.2708,
-          "adjacent_update_cosine_similarity": 0.6604,
-          "mean_abs_update_similarity": 0.4968,
-          "cumulative_drift": 10.3967
+          "step_update_l2_norm": 3.2705,
+          "adjacent_update_cosine_similarity": 0.6606,
+          "mean_abs_update_similarity": 0.4969,
+          "cumulative_drift": 10.3964
         },
         {
           "step": 5,
           "target_concept": "Neon_Lines",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.2243,
+          "semantic_similarity": 0.2242,
           "candidate_scores": {
-            "Classic_Painting": 0.2243,
-            "Line_Illustration": 0.499,
+            "Classic_Painting": 0.2242,
+            "Line_Illustration": 0.4989,
             "Geometric_Design": 0.4634,
-            "Atmospheric_Landscape": 0.2774,
-            "Realism_Photo": 0.1647
+            "Atmospheric_Landscape": 0.2773,
+            "Realism_Photo": 0.1645
           },
-          "step_update_l2_norm": 3.9842,
+          "step_update_l2_norm": 3.9845,
           "adjacent_update_cosine_similarity": 0.6179,
           "mean_abs_update_similarity": 0.5205,
           "cumulative_drift": 14.3809
@@ -141,15 +141,15 @@
           "semantic_similarity": 0.2564,
           "candidate_scores": {
             "Classic_Painting": 0.2564,
-            "Line_Illustration": 0.2288,
+            "Line_Illustration": 0.2287,
             "Geometric_Design": 0.2374,
-            "Atmospheric_Landscape": 0.5615,
+            "Atmospheric_Landscape": 0.5614,
             "Realism_Photo": 0.2801
           },
-          "step_update_l2_norm": 4.2975,
+          "step_update_l2_norm": 4.2974,
           "adjacent_update_cosine_similarity": 0.5672,
           "mean_abs_update_similarity": 0.4894,
-          "cumulative_drift": 18.6784
+          "cumulative_drift": 18.6783
         }
       ]
     },
@@ -190,14 +190,14 @@
       "RA_I": 81.6,
       "RA_C": 86.4,
       "cumulative_parameter_drift": 12.0065,
-      "net_displacement_l2": 6.6596,
-      "mean_update_cosine_similarity": 0.1879,
+      "net_displacement_l2": 6.66,
+      "mean_update_cosine_similarity": 0.1878,
       "adjacent_update_cosine_similarity": 0.2669,
       "cumulative_drift_trajectory": [
-        1.7391,
-        3.9359,
-        5.8059,
-        7.8108,
+        1.7392,
+        3.936,
+        5.8058,
+        7.8106,
         9.9374,
         12.0065
       ],
@@ -206,18 +206,18 @@
           "step": 1,
           "target_concept": "Picasso",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.4241,
+          "semantic_similarity": 0.424,
           "candidate_scores": {
-            "Classic_Painting": 0.4241,
+            "Classic_Painting": 0.424,
             "Line_Illustration": 0.2995,
             "Geometric_Design": 0.4615,
             "Atmospheric_Landscape": 0.2646,
             "Realism_Photo": 0.3036
           },
-          "step_update_l2_norm": 1.7391,
+          "step_update_l2_norm": 1.7392,
           "adjacent_update_cosine_similarity": 0.0,
           "mean_abs_update_similarity": 0.0,
-          "cumulative_drift": 1.7391
+          "cumulative_drift": 1.7392
         },
         {
           "step": 2,
@@ -225,66 +225,66 @@
           "selected_anchor": "Line_Illustration",
           "semantic_similarity": 0.1177,
           "candidate_scores": {
-            "Classic_Painting": 0.401,
+            "Classic_Painting": 0.4011,
             "Line_Illustration": 0.1177,
             "Geometric_Design": 0.1374,
             "Atmospheric_Landscape": 0.2234,
             "Realism_Photo": 0.209
           },
           "step_update_l2_norm": 2.1968,
-          "adjacent_update_cosine_similarity": 0.272,
-          "mean_abs_update_similarity": 0.272,
-          "cumulative_drift": 3.9359
+          "adjacent_update_cosine_similarity": 0.2719,
+          "mean_abs_update_similarity": 0.2719,
+          "cumulative_drift": 3.936
         },
         {
           "step": 3,
           "target_concept": "Cartoon",
           "selected_anchor": "Geometric_Design",
-          "semantic_similarity": 0.3365,
+          "semantic_similarity": 0.3366,
           "candidate_scores": {
             "Classic_Painting": 0.3891,
-            "Line_Illustration": 0.5163,
-            "Geometric_Design": 0.3365,
+            "Line_Illustration": 0.5162,
+            "Geometric_Design": 0.3366,
             "Atmospheric_Landscape": 0.2899,
             "Realism_Photo": 0.2157
           },
-          "step_update_l2_norm": 1.87,
-          "adjacent_update_cosine_similarity": 0.0814,
-          "mean_abs_update_similarity": 0.0533,
-          "cumulative_drift": 5.8059
+          "step_update_l2_norm": 1.8698,
+          "adjacent_update_cosine_similarity": 0.0815,
+          "mean_abs_update_similarity": 0.0534,
+          "cumulative_drift": 5.8058
         },
         {
           "step": 4,
           "target_concept": "Ukiyoe",
           "selected_anchor": "Atmospheric_Landscape",
-          "semantic_similarity": 0.2461,
+          "semantic_similarity": 0.2462,
           "candidate_scores": {
-            "Classic_Painting": 0.3376,
+            "Classic_Painting": 0.3377,
             "Line_Illustration": 0.5459,
-            "Geometric_Design": 0.3372,
-            "Atmospheric_Landscape": 0.2461,
-            "Realism_Photo": 0.1879
+            "Geometric_Design": 0.3374,
+            "Atmospheric_Landscape": 0.2462,
+            "Realism_Photo": 0.188
           },
-          "step_update_l2_norm": 2.0049,
-          "adjacent_update_cosine_similarity": 0.3042,
+          "step_update_l2_norm": 2.0048,
+          "adjacent_update_cosine_similarity": 0.3043,
           "mean_abs_update_similarity": 0.1734,
-          "cumulative_drift": 7.8108
+          "cumulative_drift": 7.8106
         },
         {
           "step": 5,
           "target_concept": "Neon_Lines",
           "selected_anchor": "Realism_Photo",
-          "semantic_similarity": 0.1647,
+          "semantic_similarity": 0.1645,
           "candidate_scores": {
-            "Classic_Painting": 0.2243,
-            "Line_Illustration": 0.499,
+            "Classic_Painting": 0.2242,
+            "Line_Illustration": 0.4989,
             "Geometric_Design": 0.4634,
-            "Atmospheric_Landscape": 0.2774,
-            "Realism_Photo": 0.1647
+            "Atmospheric_Landscape": 0.2773,
+            "Realism_Photo": 0.1645
           },
-          "step_update_l2_norm": 2.1266,
+          "step_update_l2_norm": 2.1268,
           "adjacent_update_cosine_similarity": 0.3509,
-          "mean_abs_update_similarity": 0.2284,
+          "mean_abs_update_similarity": 0.2283,
           "cumulative_drift": 9.9374
         },
         {
@@ -294,13 +294,13 @@
           "semantic_similarity": 0.2564,
           "candidate_scores": {
             "Classic_Painting": 0.2564,
-            "Line_Illustration": 0.2288,
+            "Line_Illustration": 0.2287,
             "Geometric_Design": 0.2374,
-            "Atmospheric_Landscape": 0.5615,
+            "Atmospheric_Landscape": 0.5614,
             "Realism_Photo": 0.2801
           },
           "step_update_l2_norm": 2.0691,
-          "adjacent_update_cosine_similarity": 0.3259,
+          "adjacent_update_cosine_similarity": 0.3258,
           "mean_abs_update_similarity": 0.2011,
           "cumulative_drift": 12.0065
         }
@@ -343,14 +343,14 @@
       "RA_I": 89.1,
       "RA_C": 92.4,
       "cumulative_parameter_drift": 6.7551,
-      "net_displacement_l2": 4.1108,
-      "mean_update_cosine_similarity": 0.2492,
-      "adjacent_update_cosine_similarity": 0.2309,
+      "net_displacement_l2": 4.1113,
+      "mean_update_cosine_similarity": 0.2493,
+      "adjacent_update_cosine_similarity": 0.231,
       "cumulative_drift_trajectory": [
         1.0985,
-        2.256,
+        2.2559,
         3.3011,
-        4.6096,
+        4.6095,
         5.714,
         6.7551
       ],
@@ -361,7 +361,7 @@
           "selected_anchor": "Geometric_Design",
           "semantic_similarity": 0.4615,
           "candidate_scores": {
-            "Classic_Painting": 0.4241,
+            "Classic_Painting": 0.424,
             "Line_Illustration": 0.2995,
             "Geometric_Design": 0.4615,
             "Atmospheric_Landscape": 0.2646,
@@ -376,32 +376,32 @@
           "step": 2,
           "target_concept": "Van_Gogh",
           "selected_anchor": "Classic_Painting",
-          "semantic_similarity": 0.401,
+          "semantic_similarity": 0.4011,
           "candidate_scores": {
-            "Classic_Painting": 0.2044,
+            "Classic_Painting": 0.2045,
             "Line_Illustration": -0.1238,
             "Geometric_Design": -0.3921,
-            "Atmospheric_Landscape": 0.0127,
+            "Atmospheric_Landscape": 0.0126,
             "Realism_Photo": -0.016
           },
-          "step_update_l2_norm": 1.1575,
-          "adjacent_update_cosine_similarity": 0.3575,
-          "mean_abs_update_similarity": 0.3575,
-          "cumulative_drift": 2.256
+          "step_update_l2_norm": 1.1574,
+          "adjacent_update_cosine_similarity": 0.3576,
+          "mean_abs_update_similarity": 0.3576,
+          "cumulative_drift": 2.2559
         },
         {
           "step": 3,
           "target_concept": "Cartoon",
           "selected_anchor": "Line_Illustration",
-          "semantic_similarity": 0.5163,
+          "semantic_similarity": 0.5162,
           "candidate_scores": {
             "Classic_Painting": 0.081,
-            "Line_Illustration": 0.347,
-            "Geometric_Design": -0.0157,
+            "Line_Illustration": 0.3469,
+            "Geometric_Design": -0.0155,
             "Atmospheric_Landscape": 0.2182,
             "Realism_Photo": 0.111
           },
-          "step_update_l2_norm": 1.0451,
+          "step_update_l2_norm": 1.0452,
           "adjacent_update_cosine_similarity": 0.2992,
           "mean_abs_update_similarity": 0.3078,
           "cumulative_drift": 3.3011
@@ -410,51 +410,51 @@
           "step": 4,
           "target_concept": "Ukiyoe",
           "selected_anchor": "Atmospheric_Landscape",
-          "semantic_similarity": 0.2461,
+          "semantic_similarity": 0.2462,
           "candidate_scores": {
-            "Classic_Painting": 0.0528,
+            "Classic_Painting": 0.0529,
             "Line_Illustration": 0.1568,
-            "Geometric_Design": 0.0011,
-            "Atmospheric_Landscape": 0.1718,
-            "Realism_Photo": 0.0715
+            "Geometric_Design": 0.0013,
+            "Atmospheric_Landscape": 0.1719,
+            "Realism_Photo": 0.0716
           },
-          "step_update_l2_norm": 1.3085,
-          "adjacent_update_cosine_similarity": 0.1604,
-          "mean_abs_update_similarity": 0.1351,
-          "cumulative_drift": 4.6096
+          "step_update_l2_norm": 1.3084,
+          "adjacent_update_cosine_similarity": 0.1607,
+          "mean_abs_update_similarity": 0.1352,
+          "cumulative_drift": 4.6095
         },
         {
           "step": 5,
           "target_concept": "Neon_Lines",
           "selected_anchor": "Line_Illustration",
-          "semantic_similarity": 0.499,
+          "semantic_similarity": 0.4989,
           "candidate_scores": {
-            "Classic_Painting": -0.0721,
-            "Line_Illustration": 0.1895,
+            "Classic_Painting": -0.0722,
+            "Line_Illustration": 0.1893,
             "Geometric_Design": 0.136,
-            "Atmospheric_Landscape": -0.0309,
-            "Realism_Photo": 0.0435
+            "Atmospheric_Landscape": -0.031,
+            "Realism_Photo": 0.0434
           },
-          "step_update_l2_norm": 1.1044,
-          "adjacent_update_cosine_similarity": 0.0387,
-          "mean_abs_update_similarity": 0.2356,
+          "step_update_l2_norm": 1.1045,
+          "adjacent_update_cosine_similarity": 0.0388,
+          "mean_abs_update_similarity": 0.2357,
           "cumulative_drift": 5.714
         },
         {
           "step": 6,
           "target_concept": "Winter",
           "selected_anchor": "Atmospheric_Landscape",
-          "semantic_similarity": 0.5615,
+          "semantic_similarity": 0.5614,
           "candidate_scores": {
             "Classic_Painting": -0.0414,
-            "Line_Illustration": -0.3218,
+            "Line_Illustration": -0.3219,
             "Geometric_Design": -0.0728,
-            "Atmospheric_Landscape": 0.2256,
+            "Atmospheric_Landscape": 0.2254,
             "Realism_Photo": 0.1327
           },
           "step_update_l2_norm": 1.0411,
-          "adjacent_update_cosine_similarity": 0.2986,
-          "mean_abs_update_similarity": 0.2835,
+          "adjacent_update_cosine_similarity": 0.2987,
+          "mean_abs_update_similarity": 0.2836,
           "cumulative_drift": 6.7551
         }
       ]
@@ -499,54 +499,54 @@
       "UA": 85.1,
       "RA_I": 70.4,
       "RA_C": 78.2,
-      "cumulative_parameter_drift": 19.3553,
-      "net_displacement_l2": 15.433,
+      "cumulative_parameter_drift": 19.3547,
+      "net_displacement_l2": 15.4321,
       "mean_update_cosine_similarity": 0.561,
-      "adjacent_update_cosine_similarity": 0.556,
+      "adjacent_update_cosine_similarity": 0.5559,
       "cumulative_drift_trajectory": [
-        2.2402,
-        4.5076,
-        7.4842,
-        11.0321,
-        14.8874,
-        19.3553
+        2.2401,
+        4.5073,
+        7.484,
+        11.0317,
+        14.8868,
+        19.3547
       ],
       "steps": [
         {
           "step": 1,
           "target_concept": "Bears",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.2691,
+          "semantic_similarity": 0.2692,
           "candidate_scores": {
-            "Butterfly": 0.2691,
+            "Butterfly": 0.2692,
             "Flowers": 0.2366,
-            "Horses": 0.3346,
-            "Trees": 0.2902,
+            "Horses": 0.3347,
+            "Trees": 0.2901,
             "Architectures": 0.2969,
             "Sea": 0.2375
           },
-          "step_update_l2_norm": 2.2402,
+          "step_update_l2_norm": 2.2401,
           "adjacent_update_cosine_similarity": 0.0,
           "mean_abs_update_similarity": 0.0,
-          "cumulative_drift": 2.2402
+          "cumulative_drift": 2.2401
         },
         {
           "step": 2,
           "target_concept": "Birds",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.4568,
+          "semantic_similarity": 0.4569,
           "candidate_scores": {
-            "Butterfly": 0.4568,
-            "Flowers": 0.3157,
-            "Horses": 0.3311,
-            "Trees": 0.332,
+            "Butterfly": 0.4569,
+            "Flowers": 0.3158,
+            "Horses": 0.3312,
+            "Trees": 0.3321,
             "Architectures": 0.3462,
-            "Sea": 0.3008
+            "Sea": 0.3009
           },
-          "step_update_l2_norm": 2.2674,
-          "adjacent_update_cosine_similarity": 0.5873,
-          "mean_abs_update_similarity": 0.5873,
-          "cumulative_drift": 4.5076
+          "step_update_l2_norm": 2.2672,
+          "adjacent_update_cosine_similarity": 0.5872,
+          "mean_abs_update_similarity": 0.5872,
+          "cumulative_drift": 4.5073
         },
         {
           "step": 3,
@@ -557,50 +557,50 @@
             "Butterfly": 0.2995,
             "Flowers": 0.23,
             "Horses": 0.2806,
-            "Trees": 0.2419,
+            "Trees": 0.2418,
             "Architectures": 0.3063,
-            "Sea": 0.3838
+            "Sea": 0.3839
           },
-          "step_update_l2_norm": 2.9766,
+          "step_update_l2_norm": 2.9767,
           "adjacent_update_cosine_similarity": 0.6159,
           "mean_abs_update_similarity": 0.5966,
-          "cumulative_drift": 7.4842
+          "cumulative_drift": 7.484
         },
         {
           "step": 4,
           "target_concept": "Statues",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.2317,
+          "semantic_similarity": 0.2318,
           "candidate_scores": {
-            "Butterfly": 0.2317,
+            "Butterfly": 0.2318,
             "Flowers": 0.2432,
             "Horses": 0.2694,
-            "Trees": 0.2597,
+            "Trees": 0.2598,
             "Architectures": 0.3743,
             "Sea": 0.2489
           },
-          "step_update_l2_norm": 3.5479,
-          "adjacent_update_cosine_similarity": 0.5464,
-          "mean_abs_update_similarity": 0.5231,
-          "cumulative_drift": 11.0321
+          "step_update_l2_norm": 3.5477,
+          "adjacent_update_cosine_similarity": 0.5463,
+          "mean_abs_update_similarity": 0.523,
+          "cumulative_drift": 11.0317
         },
         {
           "step": 5,
           "target_concept": "Frogs",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.2684,
+          "semantic_similarity": 0.2685,
           "candidate_scores": {
-            "Butterfly": 0.2684,
-            "Flowers": 0.2304,
+            "Butterfly": 0.2685,
+            "Flowers": 0.2305,
             "Horses": 0.2231,
             "Trees": 0.3273,
-            "Architectures": 0.2491,
-            "Sea": 0.232
+            "Architectures": 0.2492,
+            "Sea": 0.2321
           },
-          "step_update_l2_norm": 3.8553,
-          "adjacent_update_cosine_similarity": 0.5581,
+          "step_update_l2_norm": 3.8551,
+          "adjacent_update_cosine_similarity": 0.558,
           "mean_abs_update_similarity": 0.5957,
-          "cumulative_drift": 14.8874
+          "cumulative_drift": 14.8868
         },
         {
           "step": 6,
@@ -609,16 +609,16 @@
           "semantic_similarity": 0.2036,
           "candidate_scores": {
             "Butterfly": 0.2036,
-            "Flowers": 0.1996,
-            "Horses": 0.2094,
+            "Flowers": 0.1997,
+            "Horses": 0.2095,
             "Trees": 0.2678,
-            "Architectures": 0.4556,
+            "Architectures": 0.4558,
             "Sea": 0.2133
           },
           "step_update_l2_norm": 4.4679,
           "adjacent_update_cosine_similarity": 0.4721,
           "mean_abs_update_similarity": 0.5366,
-          "cumulative_drift": 19.3553
+          "cumulative_drift": 19.3547
         }
       ]
     },
@@ -660,54 +660,54 @@
       "UA": 90.4,
       "RA_I": 79.8,
       "RA_C": 85.1,
-      "cumulative_parameter_drift": 11.864,
-      "net_displacement_l2": 6.9605,
+      "cumulative_parameter_drift": 11.8636,
+      "net_displacement_l2": 6.9599,
       "mean_update_cosine_similarity": 0.2225,
-      "adjacent_update_cosine_similarity": 0.1967,
+      "adjacent_update_cosine_similarity": 0.1968,
       "cumulative_drift_trajectory": [
-        1.9706,
-        3.8716,
-        5.825,
-        7.8096,
-        9.81,
-        11.864
+        1.9705,
+        3.8714,
+        5.8248,
+        7.8093,
+        9.8097,
+        11.8636
       ],
       "steps": [
         {
           "step": 1,
           "target_concept": "Bears",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.2691,
+          "semantic_similarity": 0.2692,
           "candidate_scores": {
-            "Butterfly": 0.2691,
+            "Butterfly": 0.2692,
             "Flowers": 0.2366,
-            "Horses": 0.3346,
-            "Trees": 0.2902,
+            "Horses": 0.3347,
+            "Trees": 0.2901,
             "Architectures": 0.2969,
             "Sea": 0.2375
           },
-          "step_update_l2_norm": 1.9706,
+          "step_update_l2_norm": 1.9705,
           "adjacent_update_cosine_similarity": 0.0,
           "mean_abs_update_similarity": 0.0,
-          "cumulative_drift": 1.9706
+          "cumulative_drift": 1.9705
         },
         {
           "step": 2,
           "target_concept": "Birds",
           "selected_anchor": "Flowers",
-          "semantic_similarity": 0.3157,
+          "semantic_similarity": 0.3158,
           "candidate_scores": {
-            "Butterfly": 0.4568,
-            "Flowers": 0.3157,
-            "Horses": 0.3311,
-            "Trees": 0.332,
+            "Butterfly": 0.4569,
+            "Flowers": 0.3158,
+            "Horses": 0.3312,
+            "Trees": 0.3321,
             "Architectures": 0.3462,
-            "Sea": 0.3008
+            "Sea": 0.3009
           },
-          "step_update_l2_norm": 1.901,
+          "step_update_l2_norm": 1.9009,
           "adjacent_update_cosine_similarity": 0.2586,
           "mean_abs_update_similarity": 0.2586,
-          "cumulative_drift": 3.8716
+          "cumulative_drift": 3.8714
         },
         {
           "step": 3,
@@ -718,50 +718,50 @@
             "Butterfly": 0.2995,
             "Flowers": 0.23,
             "Horses": 0.2806,
-            "Trees": 0.2419,
+            "Trees": 0.2418,
             "Architectures": 0.3063,
-            "Sea": 0.3838
+            "Sea": 0.3839
           },
           "step_update_l2_norm": 1.9534,
           "adjacent_update_cosine_similarity": 0.288,
           "mean_abs_update_similarity": 0.2741,
-          "cumulative_drift": 5.825
+          "cumulative_drift": 5.8248
         },
         {
           "step": 4,
           "target_concept": "Statues",
           "selected_anchor": "Trees",
-          "semantic_similarity": 0.2597,
+          "semantic_similarity": 0.2598,
           "candidate_scores": {
-            "Butterfly": 0.2317,
+            "Butterfly": 0.2318,
             "Flowers": 0.2432,
             "Horses": 0.2694,
-            "Trees": 0.2597,
+            "Trees": 0.2598,
             "Architectures": 0.3743,
             "Sea": 0.2489
           },
-          "step_update_l2_norm": 1.9846,
+          "step_update_l2_norm": 1.9845,
           "adjacent_update_cosine_similarity": 0.3174,
           "mean_abs_update_similarity": 0.2399,
-          "cumulative_drift": 7.8096
+          "cumulative_drift": 7.8093
         },
         {
           "step": 5,
           "target_concept": "Frogs",
           "selected_anchor": "Architectures",
-          "semantic_similarity": 0.2491,
+          "semantic_similarity": 0.2492,
           "candidate_scores": {
-            "Butterfly": 0.2684,
-            "Flowers": 0.2304,
+            "Butterfly": 0.2685,
+            "Flowers": 0.2305,
             "Horses": 0.2231,
             "Trees": 0.3273,
-            "Architectures": 0.2491,
-            "Sea": 0.232
+            "Architectures": 0.2492,
+            "Sea": 0.2321
           },
           "step_update_l2_norm": 2.0004,
-          "adjacent_update_cosine_similarity": 0.0576,
+          "adjacent_update_cosine_similarity": 0.0574,
           "mean_abs_update_similarity": 0.1758,
-          "cumulative_drift": 9.81
+          "cumulative_drift": 9.8097
         },
         {
           "step": 6,
@@ -770,16 +770,16 @@
           "semantic_similarity": 0.2133,
           "candidate_scores": {
             "Butterfly": 0.2036,
-            "Flowers": 0.1996,
-            "Horses": 0.2094,
+            "Flowers": 0.1997,
+            "Horses": 0.2095,
             "Trees": 0.2678,
-            "Architectures": 0.4556,
+            "Architectures": 0.4558,
             "Sea": 0.2133
           },
-          "step_update_l2_norm": 2.054,
-          "adjacent_update_cosine_similarity": -0.0622,
+          "step_update_l2_norm": 2.0539,
+          "adjacent_update_cosine_similarity": -0.0623,
           "mean_abs_update_similarity": 0.2215,
-          "cumulative_drift": 11.864
+          "cumulative_drift": 11.8636
         }
       ]
     },
@@ -821,54 +821,54 @@
       "UA": 94.8,
       "RA_I": 87.6,
       "RA_C": 91.5,
-      "cumulative_parameter_drift": 7.3425,
-      "net_displacement_l2": 4.3959,
+      "cumulative_parameter_drift": 7.3422,
+      "net_displacement_l2": 4.3955,
       "mean_update_cosine_similarity": 0.2313,
-      "adjacent_update_cosine_similarity": 0.2085,
+      "adjacent_update_cosine_similarity": 0.2084,
       "cumulative_drift_trajectory": [
-        1.2222,
-        2.3253,
-        3.5751,
-        4.8703,
-        6.1941,
-        7.3425
+        1.2221,
+        2.3251,
+        3.575,
+        4.8702,
+        6.1939,
+        7.3422
       ],
       "steps": [
         {
           "step": 1,
           "target_concept": "Bears",
           "selected_anchor": "Horses",
-          "semantic_similarity": 0.3346,
+          "semantic_similarity": 0.3347,
           "candidate_scores": {
-            "Butterfly": 0.2691,
+            "Butterfly": 0.2692,
             "Flowers": 0.2366,
-            "Horses": 0.3346,
-            "Trees": 0.2902,
+            "Horses": 0.3347,
+            "Trees": 0.2901,
             "Architectures": 0.2969,
             "Sea": 0.2375
           },
-          "step_update_l2_norm": 1.2222,
+          "step_update_l2_norm": 1.2221,
           "adjacent_update_cosine_similarity": 0.0,
           "mean_abs_update_similarity": 0.0,
-          "cumulative_drift": 1.2222
+          "cumulative_drift": 1.2221
         },
         {
           "step": 2,
           "target_concept": "Birds",
           "selected_anchor": "Butterfly",
-          "semantic_similarity": 0.4568,
+          "semantic_similarity": 0.4569,
           "candidate_scores": {
-            "Butterfly": 0.265,
-            "Flowers": 0.1755,
-            "Horses": -0.1438,
+            "Butterfly": 0.2652,
+            "Flowers": 0.1756,
+            "Horses": -0.1437,
             "Trees": 0.1829,
             "Architectures": 0.2601,
-            "Sea": 0.1213
+            "Sea": 0.1214
           },
-          "step_update_l2_norm": 1.1031,
-          "adjacent_update_cosine_similarity": 0.3487,
-          "mean_abs_update_similarity": 0.3487,
-          "cumulative_drift": 2.3253
+          "step_update_l2_norm": 1.103,
+          "adjacent_update_cosine_similarity": 0.3486,
+          "mean_abs_update_similarity": 0.3486,
+          "cumulative_drift": 2.3251
         },
         {
           "step": 3,
@@ -876,71 +876,71 @@
           "selected_anchor": "Architectures",
           "semantic_similarity": 0.3063,
           "candidate_scores": {
-            "Butterfly": -0.0975,
-            "Flowers": 0.0572,
+            "Butterfly": -0.0976,
+            "Flowers": 0.0571,
             "Horses": -0.1192,
-            "Trees": 0.0997,
-            "Architectures": 0.2054,
-            "Sea": 0.1972
+            "Trees": 0.0996,
+            "Architectures": 0.2053,
+            "Sea": 0.1973
           },
-          "step_update_l2_norm": 1.2498,
+          "step_update_l2_norm": 1.2499,
           "adjacent_update_cosine_similarity": 0.2382,
           "mean_abs_update_similarity": 0.1836,
-          "cumulative_drift": 3.5751
+          "cumulative_drift": 3.575
         },
         {
           "step": 4,
           "target_concept": "Statues",
           "selected_anchor": "Trees",
-          "semantic_similarity": 0.2597,
+          "semantic_similarity": 0.2598,
           "candidate_scores": {
-            "Butterfly": -0.0754,
+            "Butterfly": -0.0753,
             "Flowers": 0.1371,
-            "Horses": -0.0253,
-            "Trees": 0.1578,
-            "Architectures": 0.079,
-            "Sea": 0.1457
+            "Horses": -0.0252,
+            "Trees": 0.1579,
+            "Architectures": 0.0791,
+            "Sea": 0.1458
           },
           "step_update_l2_norm": 1.2952,
-          "adjacent_update_cosine_similarity": 0.0993,
-          "mean_abs_update_similarity": 0.1854,
-          "cumulative_drift": 4.8703
+          "adjacent_update_cosine_similarity": 0.0992,
+          "mean_abs_update_similarity": 0.1853,
+          "cumulative_drift": 4.8702
         },
         {
           "step": 5,
           "target_concept": "Frogs",
           "selected_anchor": "Flowers",
-          "semantic_similarity": 0.2304,
+          "semantic_similarity": 0.2305,
           "candidate_scores": {
-            "Butterfly": -0.0819,
-            "Flowers": 0.0696,
+            "Butterfly": -0.0818,
+            "Flowers": 0.0697,
             "Horses": -0.1201,
             "Trees": -0.0287,
-            "Architectures": -0.0561,
-            "Sea": 0.0632
+            "Architectures": -0.056,
+            "Sea": 0.0633
           },
-          "step_update_l2_norm": 1.3238,
+          "step_update_l2_norm": 1.3237,
           "adjacent_update_cosine_similarity": 0.23,
           "mean_abs_update_similarity": 0.2924,
-          "cumulative_drift": 6.1941
+          "cumulative_drift": 6.1939
         },
         {
           "step": 6,
           "target_concept": "Towers",
           "selected_anchor": "Architectures",
-          "semantic_similarity": 0.4556,
+          "semantic_similarity": 0.4558,
           "candidate_scores": {
             "Butterfly": -0.0882,
             "Flowers": -0.0965,
             "Horses": -0.0902,
             "Trees": -0.0154,
-            "Architectures": 0.1926,
+            "Architectures": 0.1927,
             "Sea": 0.0865
           },
-          "step_update_l2_norm": 1.1484,
+          "step_update_l2_norm": 1.1483,
           "adjacent_update_cosine_similarity": 0.1262,
           "mean_abs_update_similarity": 0.2056,
-          "cumulative_drift": 7.3425
+          "cumulative_drift": 7.3422
         }
       ]
     }

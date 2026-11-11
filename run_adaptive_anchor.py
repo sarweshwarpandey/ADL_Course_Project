@@ -55,13 +55,21 @@ def build_semantic_embeddings(
     """
     if use_clip:
         try:
-            from transformers import CLIPTokenizer, CLIPTextModel
+            from transformers import CLIPTokenizer, CLIPTextModel, CLIPTextConfig
             print(f"Loading CLIP text encoder from '{base_model_dir}' on {device}...")
             tokenizer = CLIPTokenizer.from_pretrained(base_model_dir, subfolder="tokenizer", local_files_only=False)
             dtype = torch.float16 if "cuda" in device else torch.float32
-            text_encoder = CLIPTextModel.from_pretrained(
-                base_model_dir, subfolder="text_encoder", torch_dtype=dtype, local_files_only=False
-            ).to(device)
+            local_bin = os.path.join(base_model_dir, "text_encoder", "pytorch_model.bin")
+            if os.path.exists(local_bin):
+                cfg = CLIPTextConfig.from_pretrained(base_model_dir, subfolder="text_encoder", local_files_only=True)
+                text_encoder = CLIPTextModel(cfg)
+                sd = torch.load(local_bin, map_location="cpu", weights_only=False)
+                text_encoder.load_state_dict(sd, strict=False)
+                text_encoder = text_encoder.to(device=device, dtype=dtype)
+            else:
+                text_encoder = CLIPTextModel.from_pretrained(
+                    base_model_dir, subfolder="text_encoder", torch_dtype=dtype, local_files_only=False
+                ).to(device)
             text_encoder.eval()
 
             embs = {}
@@ -242,7 +250,7 @@ def run_strategy_evaluation(
 
 def main():
     parser = argparse.ArgumentParser(description="Task 2: Adaptive Anchor Assignment for Continual Unlearning")
-    parser.add_argument("--base_model_dir", type=str, default="CompVis/stable-diffusion-v1-4",
+    parser.add_argument("--base_model_dir", type=str, default="Checkpoints/Generators/UnlearnCanvas",
                         help="Path to base diffusion model or HuggingFace model ID for CLIP text encoder")
     parser.add_argument("--domain", type=str, default="style", choices=["style", "object", "both"],
                         help="Unlearning domain to evaluate")
@@ -252,11 +260,16 @@ def main():
                         help="Candidate anchor pool")
     parser.add_argument("--strategy", type=str, default="all", choices=["shared", "independent", "adaptive", "all"],
                         help="Anchor selection strategy to evaluate (default: 'all' to compare all three)")
-    parser.add_argument("--use_clip", action="store_true",
+    parser.add_argument("--use_clip", action="store_true", default=True,
                         help="Load full HuggingFace CLIPTextModel weights (auto-falls back when offline)")
     parser.add_argument("--save_dir", type=str, default="./outputs/task2_anchor")
     parser.add_argument("--device", type=str, default="cuda" if torch.cuda.is_available() else "cpu")
     args = parser.parse_args()
+
+    base_model_path = Path(args.base_model_dir)
+    alt_lab_path = REPO_ROOT / "adl_cp" / "ADL_Course_Project" / "Checkpoints" / "Generators" / "UnlearnCanvas"
+    if not (base_model_path / "text_encoder").exists() and (alt_lab_path / "text_encoder").exists():
+        args.base_model_dir = str(alt_lab_path)
 
     os.makedirs(args.save_dir, exist_ok=True)
 
