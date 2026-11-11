@@ -13,8 +13,8 @@
       "Line_Illustration",
       "Classic_Painting"
     ],
-    "cumulative_drift": 8.081,
-    "mean_update_cosine_similarity": 0.2481
+    "cumulative_drift": 8.084,
+    "mean_update_cosine_similarity": 0.2384
   },
   {
     "pool_size": 3,
@@ -31,8 +31,8 @@
       "Geometric_Design",
       "Classic_Painting"
     ],
-    "cumulative_drift": 7.8778,
-    "mean_update_cosine_similarity": 0.1588
+    "cumulative_drift": 7.8987,
+    "mean_update_cosine_similarity": 0.1265
   },
   {
     "pool_size": 4,
@@ -47,11 +47,11 @@
       "Atmospheric_Landscape",
       "Line_Illustration",
       "Geometric_Design",
-      "Atmospheric_Landscape",
-      "Geometric_Design"
+      "Geometric_Design",
+      "Line_Illustration"
     ],
-    "cumulative_drift": 7.4892,
-    "mean_update_cosine_similarity": 0.0927
+    "cumulative_drift": 7.6789,
+    "mean_update_cosine_similarity": 0.0998
   },
   {
     "pool_size": 5,
@@ -70,8 +70,8 @@
       "Realism_Photo",
       "Geometric_Design"
     ],
-    "cumulative_drift": 7.6074,
-    "mean_update_cosine_similarity": 0.0669
+    "cumulative_drift": 7.6581,
+    "mean_update_cosine_similarity": 0.0649
   },
   {
     "pool_size": 6,
@@ -91,7 +91,7 @@
       "object",
       "Geometric_Design"
     ],
-    "cumulative_drift": 7.5151,
-    "mean_update_cosine_similarity": 0.0779
+    "cumulative_drift": 7.5555,
+    "mean_update_cosine_similarity": 0.0666
   }
 ]

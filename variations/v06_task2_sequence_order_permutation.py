@@ -71,6 +71,8 @@ def main():
     with open(out_dir / "v06_sequence_order_sensitivity.json", "w") as f:
         json.dump(out, f, indent=2)
     print("-" * 106)
+    from variation_plotter import plot_v06
+    plot_v06(out)
 
 
 if __name__ == "__main__":

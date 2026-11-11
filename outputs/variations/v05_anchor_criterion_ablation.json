@@ -8,15 +8,15 @@
     },
     "assigned_anchors": [
       "Classic_Painting",
-      "Classic_Painting",
+      "Atmospheric_Landscape",
       "Line_Illustration",
       "Line_Illustration",
       "Geometric_Design",
       "Atmospheric_Landscape"
     ],
     "unique_anchors_used": 4,
-    "cumulative_drift": 7.6643,
-    "mean_update_cos_sim": 0.1216,
+    "cumulative_drift": 7.5588,
+    "mean_update_cos_sim": 0.1094,
     "UA": 93.1,
     "RA_I": 83.4,
     "RA_C": 88.2
@@ -30,15 +30,15 @@
     },
     "assigned_anchors": [
       "Classic_Painting",
-      "Realism_Photo",
       "Atmospheric_Landscape",
       "Line_Illustration",
+      "Realism_Photo",
       "Geometric_Design",
-      "Classic_Painting"
+      "Geometric_Design"
     ],
     "unique_anchors_used": 5,
-    "cumulative_drift": 7.8985,
-    "mean_update_cos_sim": 0.0882,
+    "cumulative_drift": 7.8676,
+    "mean_update_cos_sim": 0.0667,
     "UA": 90.8,
     "RA_I": 84.1,
     "RA_C": 87.9
@@ -54,13 +54,13 @@
       "Classic_Painting",
       "Atmospheric_Landscape",
       "Line_Illustration",
-      "Geometric_Design",
+      "Line_Illustration",
       "Geometric_Design",
       "Atmospheric_Landscape"
     ],
     "unique_anchors_used": 4,
-    "cumulative_drift": 7.6863,
-    "mean_update_cos_sim": 0.1279,
+    "cumulative_drift": 7.5588,
+    "mean_update_cos_sim": 0.1094,
     "UA": 94.2,
     "RA_I": 86.8,
     "RA_C": 90.7
@@ -77,12 +77,12 @@
       "Atmospheric_Landscape",
       "Line_Illustration",
       "Geometric_Design",
-      "Geometric_Design",
-      "Realism_Photo"
+      "Realism_Photo",
+      "Atmospheric_Landscape"
     ],
     "unique_anchors_used": 5,
-    "cumulative_drift": 7.5927,
-    "mean_update_cos_sim": 0.1006,
+    "cumulative_drift": 7.6899,
+    "mean_update_cos_sim": 0.0941,
     "UA": 94.0,
     "RA_I": 86.2,
     "RA_C": 90.3
@@ -103,8 +103,8 @@
       "Atmospheric_Landscape"
     ],
     "unique_anchors_used": 5,
-    "cumulative_drift": 7.7447,
-    "mean_update_cos_sim": 0.0954,
+    "cumulative_drift": 7.6899,
+    "mean_update_cos_sim": 0.0941,
     "UA": 95.3,
     "RA_I": 89.1,
     "RA_C": 92.4

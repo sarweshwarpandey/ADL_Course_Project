@@ -86,6 +86,8 @@ def main():
         json.dump(out_rows, f, indent=2)
     print("-" * 96)
     print(f"Saved results to: {out_file}")
+    from variation_plotter import plot_v02
+    plot_v02(out_rows)
 
 
 if __name__ == "__main__":

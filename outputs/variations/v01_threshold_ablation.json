@@ -21,7 +21,7 @@
     "UA": 81.4,
     "RA_I": 89.89,
     "RA_C": 93.56,
-    "l2_drift": 2.5477
+    "l2_drift": 7.4075
   },
   {
     "target_ua_threshold": 85.0,
@@ -45,7 +45,7 @@
     "UA": 86.4,
     "RA_I": 89.68,
     "RA_C": 93.43,
-    "l2_drift": 2.6646
+    "l2_drift": 7.7474
   },
   {
     "target_ua_threshold": 90.0,
@@ -69,7 +69,7 @@
     "UA": 91.4,
     "RA_I": 89.54,
     "RA_C": 93.34,
-    "l2_drift": 2.7359
+    "l2_drift": 7.9545
   },
   {
     "target_ua_threshold": 95.0,
@@ -93,7 +93,7 @@
     "UA": 96.4,
     "RA_I": 89.18,
     "RA_C": 93.12,
-    "l2_drift": 2.9237
+    "l2_drift": 8.5007
   },
   {
     "target_ua_threshold": 98.0,
@@ -117,6 +117,6 @@
     "UA": 99.2,
     "RA_I": 88.75,
     "RA_C": 92.85,
-    "l2_drift": 3.1368
+    "l2_drift": 9.1203
   }
 ]

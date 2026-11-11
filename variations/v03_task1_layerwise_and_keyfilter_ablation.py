@@ -98,6 +98,8 @@ def main():
     with open(out_dir / "v03_layerwise_and_keyfilter.json", "w") as f:
         json.dump({"block_alphas": block_alphas, "results": rows}, f, indent=2)
     print("-" * 92)
+    from variation_plotter import plot_v03
+    plot_v03(rows)
 
 
 if __name__ == "__main__":

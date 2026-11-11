@@ -19,7 +19,7 @@
     "UA": 94.9,
     "RA_I": 88.2,
     "RA_C": 92.4,
-    "drift": 3.0789
+    "drift": 8.9518
   },
   {
     "mode": "inverse_l1",
@@ -41,7 +41,7 @@
     "UA": 95.2,
     "RA_I": 88.5,
     "RA_C": 92.6,
-    "drift": 3.0741
+    "drift": 8.9378
   },
   {
     "mode": "cosine_divergence",
@@ -63,7 +63,7 @@
     "UA": 94.6,
     "RA_I": 87.9,
     "RA_C": 92.1,
-    "drift": 4.0196
+    "drift": 11.687
   },
   {
     "mode": "linear_ramp",
@@ -85,7 +85,7 @@
     "UA": 93.8,
     "RA_I": 86.4,
     "RA_C": 91.2,
-    "drift": 3.0715
+    "drift": 8.9304
   },
   {
     "mode": "logistic_phase_transition",
@@ -107,6 +107,6 @@
     "UA": 96.4,
     "RA_I": 88.7,
     "RA_C": 92.9,
-    "drift": 3.1786
+    "drift": 9.2417
   }
 ]

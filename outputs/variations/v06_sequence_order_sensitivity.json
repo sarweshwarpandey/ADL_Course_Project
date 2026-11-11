@@ -8,18 +8,18 @@
       "Neon_Lines",
       "Winter"
     ],
-    "shared_drift": 19.6528,
-    "independent_drift": 12.1499,
-    "adaptive_drift": 7.6947,
+    "shared_drift": 19.8627,
+    "independent_drift": 12.1895,
+    "adaptive_drift": 7.4834,
     "adaptive_assigned_anchors": [
       "Classic_Painting",
       "Atmospheric_Landscape",
       "Line_Illustration",
-      "Geometric_Design",
       "Realism_Photo",
+      "Geometric_Design",
       "Atmospheric_Landscape"
     ],
-    "adaptive_update_sim": 0.0747
+    "adaptive_update_sim": 0.0737
   },
   "2. Reverse Order (Atmospheric -> Graphic -> Fine Art)": {
     "sequence": [
@@ -30,9 +30,9 @@
       "Van_Gogh",
       "Picasso"
     ],
-    "shared_drift": 19.3909,
-    "independent_drift": 12.1093,
-    "adaptive_drift": 7.7286,
+    "shared_drift": 19.6259,
+    "independent_drift": 12.1716,
+    "adaptive_drift": 7.6481,
     "adaptive_assigned_anchors": [
       "Atmospheric_Landscape",
       "Geometric_Design",
@@ -41,7 +41,7 @@
       "Realism_Photo",
       "Classic_Painting"
     ],
-    "adaptive_update_sim": 0.0648
+    "adaptive_update_sim": 0.0819
   },
   "3. Clustered Order (Similar Styles Back-to-Back)": {
     "sequence": [
@@ -52,18 +52,18 @@
       "Neon_Lines",
       "Winter"
     ],
-    "shared_drift": 19.661,
-    "independent_drift": 12.3341,
-    "adaptive_drift": 7.7113,
+    "shared_drift": 19.9029,
+    "independent_drift": 12.3069,
+    "adaptive_drift": 7.486,
     "adaptive_assigned_anchors": [
       "Classic_Painting",
       "Atmospheric_Landscape",
       "Line_Illustration",
       "Geometric_Design",
-      "Realism_Photo",
-      "Atmospheric_Landscape"
+      "Geometric_Design",
+      "Realism_Photo"
     ],
-    "adaptive_update_sim": 0.0756
+    "adaptive_update_sim": 0.0734
   },
   "4. Alternating Contrast Order": {
     "sequence": [
@@ -74,17 +74,17 @@
       "Neon_Lines",
       "Ukiyoe"
     ],
-    "shared_drift": 19.6294,
-    "independent_drift": 12.1358,
-    "adaptive_drift": 7.6152,
+    "shared_drift": 19.7532,
+    "independent_drift": 12.043,
+    "adaptive_drift": 7.6432,
     "adaptive_assigned_anchors": [
       "Atmospheric_Landscape",
       "Classic_Painting",
       "Line_Illustration",
-      "Realism_Photo",
       "Geometric_Design",
-      "Line_Illustration"
+      "Geometric_Design",
+      "Realism_Photo"
     ],
-    "adaptive_update_sim": 0.0785
+    "adaptive_update_sim": 0.0876
   }
 }

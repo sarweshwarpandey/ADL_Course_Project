@@ -103,6 +103,8 @@ def main():
     with open(out_dir / "v04_threshold_formulas.json", "w") as f:
         json.dump(out, f, indent=2)
     print("-" * 98)
+    from variation_plotter import plot_v04
+    plot_v04(out)
 
 
 if __name__ == "__main__":

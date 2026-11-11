@@ -5,7 +5,7 @@
     "UA": 96.4,
     "RA_I": 88.7,
     "RA_C": 92.9,
-    "l2_drift": 2.9237
+    "l2_drift": 8.5007
   },
   {
     "configuration": "Adaptive alpha* + sum  + Adaptive top-k*",
@@ -13,7 +13,7 @@
     "UA": 98.1,
     "RA_I": 76.4,
     "RA_C": 84.2,
-    "l2_drift": 11.8536
+    "l2_drift": 34.4645
   },
   {
     "configuration": "Adaptive alpha* + max  + Adaptive top-k*",
@@ -21,7 +21,7 @@
     "UA": 94.8,
     "RA_I": 84.5,
     "RA_C": 90.1,
-    "l2_drift": 5.2064
+    "l2_drift": 15.1375
   },
   {
     "configuration": "Adaptive alpha* + mean + Fixed top-k=0.20",
@@ -29,7 +29,7 @@
     "UA": 91.5,
     "RA_I": 90.2,
     "RA_C": 93.8,
-    "l2_drift": 4.5609
+    "l2_drift": 13.261
   },
   {
     "configuration": "Adaptive alpha* + mean + Fixed top-k=0.50",
@@ -37,7 +37,7 @@
     "UA": 95.6,
     "RA_I": 88.1,
     "RA_C": 92.4,
-    "l2_drift": 3.1314
+    "l2_drift": 9.1044
   },
   {
     "configuration": "Adaptive alpha* + mean + Fixed top-k=0.80",
@@ -45,6 +45,6 @@
     "UA": 96.8,
     "RA_I": 83.9,
     "RA_C": 89.7,
-    "l2_drift": 2.9237
+    "l2_drift": 8.5005
   }
 ]

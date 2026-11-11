@@ -97,6 +97,8 @@ def main():
     with open(out_dir / "v08_combined_task1_task2.json", "w") as f:
         json.dump(table, f, indent=2)
     print("-" * 96)
+    from variation_plotter import plot_v08
+    plot_v08(table)
 
 
 if __name__ == "__main__":

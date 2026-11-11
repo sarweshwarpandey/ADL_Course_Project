@@ -91,6 +91,8 @@ def main():
         json.dump(results, f, indent=2)
     print("-" * 88)
     print(f"Saved detailed per-threshold results to: {out_file}")
+    from variation_plotter import plot_v01
+    plot_v01(results)
 
 
 if __name__ == "__main__":

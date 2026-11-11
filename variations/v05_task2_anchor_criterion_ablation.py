@@ -127,6 +127,8 @@ def main():
     with open(out_dir / "v05_anchor_criterion_ablation.json", "w") as f:
         json.dump(results, f, indent=2)
     print("-" * 108)
+    from variation_plotter import plot_v05
+    plot_v05(results)
 
 
 if __name__ == "__main__":

@@ -4,27 +4,27 @@
     "UA": 89.2,
     "RA_I": 78.4,
     "RA_C": 85.6,
-    "drift": 8.2363
+    "drift": 23.947
   },
   {
     "pipeline": "2. Task 1 Only (Shared Anchor + Adaptive Threshold Merge)",
     "UA": 95.8,
     "RA_I": 87.9,
     "RA_C": 92.1,
-    "drift": 3.1574
+    "drift": 9.18
   },
   {
     "pipeline": "3. Task 2 Only (Adaptive Anchor + Fixed-Lambda TIES)",
     "UA": 94.6,
     "RA_I": 86.5,
     "RA_C": 91.0,
-    "drift": 5.6007
+    "drift": 16.284
   },
   {
     "pipeline": "4. Unified Task 1 + Task 2 (Adaptive Anchor + Adaptive Merge)",
     "UA": 97.6,
     "RA_I": 91.2,
     "RA_C": 94.3,
-    "drift": 2.4311
+    "drift": 7.0684
   }
 ]

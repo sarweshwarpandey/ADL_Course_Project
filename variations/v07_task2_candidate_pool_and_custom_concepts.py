@@ -79,6 +79,8 @@ def main():
     with open(out_dir / "v07_anchor_pool_size_ablation.json", "w") as f:
         json.dump(results, f, indent=2)
     print("-" * 98)
+    from variation_plotter import plot_v07
+    plot_v07(results)
 
 
 if __name__ == "__main__":
